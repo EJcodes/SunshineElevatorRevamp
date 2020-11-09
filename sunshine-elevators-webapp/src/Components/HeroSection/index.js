@@ -26,7 +26,7 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Sunshine Elevator
+                    Sunshine Elevator Service
                 </HeroH1>
                 <HeroP>
                     "We strive for excellence"
@@ -34,7 +34,7 @@ const HeroSection = () => {
                 <HeroBtnWrapper>
                     <Button to='signup' onMouseEnter={onHover}
                     onMouseLeave={onHover}>
-                        get started {hover ? <ArrowForward /> : <ArrowRight/>}
+                        Contact Us{hover ? <ArrowForward /> : <ArrowRight/>}
 
                     </Button>
                 </HeroBtnWrapper>
