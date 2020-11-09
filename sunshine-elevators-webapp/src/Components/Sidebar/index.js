@@ -6,7 +6,7 @@ const Sidebar = () => {
     return (
         <SidebarContainer>
             <Icon>
-                <CloseIcon />
+                <ClosedIcon />
             </Icon>
         </SidebarContainer>
     );
