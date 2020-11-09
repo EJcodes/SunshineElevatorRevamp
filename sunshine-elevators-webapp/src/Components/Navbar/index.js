@@ -14,9 +14,7 @@ const Navbar = () => {
         <>
           <Nav>
               <NavbarContainer>
-                  <NavLogo to='/'>
-                      <h1>Sunshine Elevators</h1>
-                  </NavLogo>
+                  <NavLogo to='/'>Sunshine Elevators</NavLogo>
                   <MobileIcon>
                       <FaBars />
                   </MobileIcon>
