@@ -28,5 +28,5 @@ export const Icon = styled.div`
     background: transparent;
     font-size: 2rem
     cursor: pointer;
-    outline: none;
+    outline: none; 
 `
