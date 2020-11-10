@@ -32,8 +32,12 @@ const HeroSection = () => {
                     "We strive for excellence"
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='signup' onMouseEnter={onHover}
-                    onMouseLeave={onHover}>
+                    <Button to='signup'
+                     onMouseEnter={onHover}
+                    onMouseLeave={onHover}
+                    primary='true'
+                    dark='true'
+                    >
                         Contact Us{hover ? <ArrowForward /> : <ArrowRight/>}
 
                     </Button>
