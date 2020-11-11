@@ -27,7 +27,7 @@ const HeroSection = () => {
             </HeroBg>
             <HeroContent>
                 <HeroH1>
-                    Sunshine Elevator Service
+                    Sunshine Elevator South Florida
                 </HeroH1>
                 <HeroP>
                     "We strive for excellence"
