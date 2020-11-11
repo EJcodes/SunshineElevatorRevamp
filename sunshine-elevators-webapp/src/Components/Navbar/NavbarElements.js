@@ -84,7 +84,7 @@ export const NavbarContainer = styled.div`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid #D3602E;
+        border-bottom: 3px solid;
     }
   `;
   
@@ -113,6 +113,6 @@ export const NavbarContainer = styled.div`
     &:hover {
         transition: all 0.2s ease-in-out;
         background: #fff;
-        color: #010606;
+        color: #D3602E;
     }
   `;
