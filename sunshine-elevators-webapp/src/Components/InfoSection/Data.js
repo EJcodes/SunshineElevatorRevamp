@@ -5,7 +5,7 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Services',
+    topLine: 'Sunshine Elevator',
     headline: 'blah blah blah',
     description: 'Get that that hat when fat you cat',
     buttonLabel: 'Get started',
