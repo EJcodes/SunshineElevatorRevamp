@@ -16,7 +16,8 @@ import{
     Img,
 
 } from './infoElements'
-const InfoSection = ({lightBg,
+const InfoSection = ({
+    lightBg,
     id,
     imgStart,
     topLine,
@@ -43,7 +44,7 @@ const InfoSection = ({lightBg,
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
                                 <Button to='home'
-                                smooth={true}//react-scroll settings
+                                smooth={true}
                                 duration={500}
                                 spy={true}
                                 exact='true'

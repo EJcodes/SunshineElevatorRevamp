@@ -18,6 +18,7 @@ opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
 top:${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
+//Fatimes is the X for the sidebar
 export const ClosedIcon = styled(FaTimes)`
     color: #fff; 
 `;
