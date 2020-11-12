@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 
 export const InfoContainer = styled.div`
+    height: 940px;
     color: #fff;
-    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#10606')};
+    background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#000')};
 
     @media screen and (max-width: 834xp) {
         padding: 100px 0;
@@ -55,7 +56,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-    color: #010606;
+    color: #D3602E;;
     font-size: 16px;
     line-height: 16px;
     font-weight: 700;
@@ -69,7 +70,7 @@ export const Heading= styled.h1`
     font-size: 48px;
     line-height: 1.1;
     font-weight: 600;
-    color:${({ lightText }) => (lightText ? '#D3602E' : '#fff')};
+    color:${({ lightText }) => (lightText ? '#010606' : '#D3602E')};
 
     @media screen and (max-width: 480px){
         font-size: 32px;
@@ -81,7 +82,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${({ darkText }) => (darkText ? '#D3602E' : "#101010")};
+    color: ${({ darkText }) => (darkText ? '#101010' : "#010606")};
 `;
 
 
