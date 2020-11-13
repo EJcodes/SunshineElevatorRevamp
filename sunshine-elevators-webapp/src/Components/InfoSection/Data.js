@@ -9,7 +9,7 @@ export const homeObjOne = {
     buttonLabel: 'Contact Us',
     imgStart: false,
     img:'./images/svg-6.svg',
-    alt: 'Desc fo the image',
+    alt: 'work sitting on top of larger wooden equipment box',
     dark: true,
     primary: true,
     darkText: false
@@ -19,16 +19,17 @@ export const homeObjTwo = {
     id: 'contactus',
     lightBg: true,
     lightText: true,
-    lightTextDesc: true,
-    topLine: 'Sunshine Elevator',
-    headline: 'Contact Us (786)558-5752',
-    description: `Email: SunShineElevatorService@gmail.com`,
-    buttonLabel: 'Email Us',
+    lightTextDesc: false,
+    topLine: 'How To Contact Sunshine Elevator',
+    headline: 'Contact Us:',
+    description: `Phone Us: (786) 558-5752`,
+    descriptionTwo: `Please don't hesitate to call or Emailing us on your free time at : SunShineElevatorService@gmail.com`,
+    buttonLabel: 'Send Email',
     imgStart: false,
     img:'./images/svg-4.svg',
-    alt: 'Desc fo the image',
+    alt: 'Images of Social media platform logos Facebook, Tweeter, Pintrest, Instagram, Twitch, Youtube',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: true
 };
 
