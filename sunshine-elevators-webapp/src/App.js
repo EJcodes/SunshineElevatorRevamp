@@ -1,7 +1,7 @@
 import './App.css';
-import { BrowserRouter as Router} from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './Pages';
-import SigninPage from './Pages/signin'
+import SigninPage from './Pages/signin';
 
 function App() {
   return (
