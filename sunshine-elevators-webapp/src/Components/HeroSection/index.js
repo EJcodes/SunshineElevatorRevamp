@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElement';
+import { animateScroll as scroll } from 'react-scroll';
 import { 
 HeroContainer,
 HeroBg,
@@ -33,7 +34,10 @@ const HeroSection = () => {
                     "We strive for excellence"
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='signup'
+                    <Button
+                    smooth={true} duration={500} spy={true}
+                    exact='true' offset={-80}
+                    to='contactus'
                      onMouseEnter={onHover}
                     onMouseLeave={onHover}
                     primary='true'
