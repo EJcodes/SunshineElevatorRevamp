@@ -23,7 +23,7 @@ export const homeObjTwo = {
     topLine: 'How To Contact Sunshine Elevator',
     headline: 'Contact Us:',
     description: `Phone Us: (786) 558-5752`,
-    descriptionTwo: `Please don't hesitate to call or Emailing us on your free time at : SunShineElevatorService@gmail.com`,
+    descriptionTwo: `You can contact us by call or Email on your free time at E-Mail: SunShineElevatorService@gmail.com`,
     buttonLabel: 'Send Email',
     imgStart: false,
     img:'./images/svg-4.svg',

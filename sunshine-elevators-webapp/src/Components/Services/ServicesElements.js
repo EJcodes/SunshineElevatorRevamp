@@ -3,14 +3,14 @@ import styled from 'styled-components';
 
 
 export const ServicesContainer= styled.div`
-    height: 800px;
+    height: 810px;
     display: flex;
     flex-direction: column;
     justify-content: content;
     align-items: center;
     background: #010606;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 834px) {
         height: 1100px;
     }
 
