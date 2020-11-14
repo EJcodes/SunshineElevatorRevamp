@@ -84,7 +84,7 @@ export const NavbarContainer = styled.div`
     cursor: pointer;
 
     &.active {
-        border-bottom: 3px solid;
+        border-bottom: 3px solid #D3602E;
     }
   `;
   
