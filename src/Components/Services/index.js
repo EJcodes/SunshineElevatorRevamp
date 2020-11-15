@@ -31,8 +31,8 @@ const Services = () => {
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
-                    <ServicesH2>Stellar Costumer Service</ServicesH2>
-                    <ServicesP> Sunshine Elevator makes sure to value and sustain the relationships with customers with quality work and a great attitude.</ServicesP>
+                    <ServicesH2> Stellar Costumer Service</ServicesH2>
+                    <ServicesP> Sunshine Elevator acknowledges and values the relationship with our customers and we solidify this with our quality work and a great attitude.</ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
