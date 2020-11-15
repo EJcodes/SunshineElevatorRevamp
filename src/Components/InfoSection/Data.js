@@ -26,7 +26,7 @@ export const homeObjTwo = {
     descriptionTwo: `You can contact us by call or Email on your free time at E-Mail: SunShineElevatorService@gmail.com`,
     buttonLabel: 'Send Email',
     imgStart: false,
-    img:'./images/svg-4.svg',
+    img:'./images/contact.svg',
     alt: 'Images of Social media platform logos Facebook, Tweeter, Pintrest, Instagram, Twitch, Youtube',
     dark: true,
     primary: true,
