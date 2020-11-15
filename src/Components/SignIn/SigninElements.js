@@ -75,7 +75,7 @@ export const Form = styled.form`
 
 export const FormH1 = styled.h1`
     margin-bottom: 40px;
-    color: #255D88;
+    color: #618DAF;
     font-size: 20px;
     font-weight: 400;
     tet-align: center;
@@ -84,7 +84,7 @@ export const FormH1 = styled.h1`
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     font-size: 14px;
-    color: #255D88;
+    color: #618DAF;
 `;
 
 
@@ -94,7 +94,7 @@ export const FormInput = styled.input`
 `;
 
 export const FormButton = styled.button`
-    background: #255D88;
+    background: #618DAF;
     padding: 16px 0;
     border: none;
     border-radius: 4px;
@@ -108,7 +108,7 @@ export const FormButton = styled.button`
 export const Text = styled.span`
     text-align: center;
     margin-top: 24px;
-    color: #255D88;
+    color: #618DAF;
     font-size: 14px;
 `;
 
