@@ -20,12 +20,12 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
                     <ServicesH2>Reduce Expenses</ServicesH2>
-                    <ServicesP> We stay competitive with our pricing to reduce your overall expenses without reducing quality of our work for our costumers.</ServicesP>
+                    <ServicesP> SunShine Elevator stays competitive with our pricing to reduce your overall expenses without reducing quality of our work for our costumers.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon2}/>
                     <ServicesH2>Quick Response Times</ServicesH2>
-                    <ServicesP> We take pride in our quick and direct responses with our customers so they stay in the loop during unforeseen circumstances. 
+                    <ServicesP> SunShine Elevator takes pride in our quick and direct responses with our customers so they stay in the loop during unforeseen circumstances. 
                         
                         </ServicesP>
                 </ServicesCard>
