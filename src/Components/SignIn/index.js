@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaUserAlt, FaLock } from 'react-icons/fa';
+import '../Fonts/Poppins-Black.ttf'
 import {    
     Container,
     FormWrap,

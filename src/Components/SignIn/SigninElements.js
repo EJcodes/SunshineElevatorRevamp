@@ -118,7 +118,7 @@ import { Link } from 'react-router-dom';
                     
                     
 export const Container = styled.div`
-font-family: 'Poppins', sans-serif;
+
 position: relative;
 width: 100%;
 min-height: 100vh;
@@ -142,6 +142,7 @@ export const FormContent = styled.div`
 
 
 export const Form = styled.form`
+font-family: 'Poppins', sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -161,8 +162,13 @@ export const InputField = styled.div`
     padding: 0 .4rem;
 `
 export const FormInput = styled.input`
-
-    
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333
 
 `; 
 
