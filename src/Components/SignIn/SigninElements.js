@@ -114,15 +114,28 @@ import { Link } from 'react-router-dom';
                     //     font-size: 14px;
                     // `;
                     
-                    // Second Style
+                    // Second Style For Login Sign Up
                     
                     
 export const Container = styled.div`
-
-position: relative;
-width: 100%;
-min-height: 100vh;
-overflow: hidden; 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+    overflow: hidden; 
+    
+    
+    &:before {
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #4481eb, #04befe);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    }
 `;
 
 export const FormWrap = styled.div`
@@ -135,8 +148,14 @@ export const FormWrap = styled.div`
 `;
 
 export const FormContent = styled.div`
-
-
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid; 
+    grid-templates-columns: 1fr;
+   
 `;
 
 
@@ -147,7 +166,25 @@ display: flex;
 align-items: center;
 justify-content: center;
 flex-direction: column;
+padding: 0 5rem;
+overflow: hidden;
+grid-column: 1 / 2;
+gird-row: 1 / 2; 
+z-index: 2;
+`;
 
+export const SignUpForm = styled.form`
+font-family: 'Poppins', sans-serif;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0 5rem;
+overflow:hidden;
+grid-column: 1 / 2;
+gird-row: 1 / 2; 
+z-index: 1;
+opacity: 0; 
 `;
 
 export const InputField = styled.div`
@@ -234,8 +271,77 @@ export const Text = styled.span`
 
 
 
+// Styled Components for Social Media links
+export const SocialText= styled.p`
+    padding: .7rem 0;
+    font-size; 1rem;
+`;
+
+export const SocialMedia = styled.div`
+    display: flex;
+    justify-content: center;    
+`;
+
+export const SocialMediaIcon = styled.div`
+    height: 46px;
+    width: 46px;
+    border: 1px solid #333;
+    margin: 0 0.45rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover{
+        color: #4481eb;
+        border-color: #4481eb;
+    }
+`;
+
+
+// panel Styled Components below
+
 export const PanelsContainer = styled.div`
+    position: absolute:
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    
+`;
+
+export const LeftPanel = styled.div`
+    padding: 3rem 17% 2rem 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+`;
+
+export const RightPanel = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+`;
+
+export const PanelH3 = styled.h3`
+
+`;
+
+export const PanelP = styled.p`
+`
+export const RightPanelImg = styled.img`
 
 `
+export const LeftPanelImg = styled.img`
 
-   
+`
