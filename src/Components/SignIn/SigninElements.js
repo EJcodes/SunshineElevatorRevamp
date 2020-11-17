@@ -267,6 +267,16 @@ export const Text = styled.span`
     margin-top: 24px;
     color: #618DAF;
     font-size: 14px;
+
+    .transparent{
+        margin: 0;
+        background: none;
+        border: 2px solid #fff;
+        width: 130px;
+        height: 41px;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
 `;
 
 
@@ -303,15 +313,14 @@ export const SocialMediaIcon = styled.div`
 `;
 
 
-// panel Styled Components below
+// panels Styled Components below
 
 export const PanelsContainer = styled.div`
-    position: absolute:
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    background-color: green;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -319,29 +328,46 @@ export const PanelsContainer = styled.div`
 `;
 
 export const LeftPanel = styled.div`
+    color: #fff;
     padding: 3rem 17% 2rem 12%;
-    display: flex;
+    display:flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
     text-align: center;
 `;
 
 export const RightPanel = styled.div`
-    display: flex;
+    color: #fff;
+    padding: 3rem 12% 2rem 17%;
+    display:flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: space-around;
     text-align: center;
 `;
 
-export const PanelH3 = styled.h3`
+export const RPC = styled.div`
+    color: #fff;
+`
+export const LPC = styled.div`
+    color: #fff;
+`
 
+export const PanelH3 = styled.h3`
+    font-weight: 600;
+    line-height: 1;
+    font-size: 1.5rem;
 `;
 
 export const PanelP = styled.p`
-`
+    font-size: 0.95rem;
+    padding: 0.7rem 0;
+`;
 export const RightPanelImg = styled.img`
+    width: 100%;
 
-`
+`;
 export const LeftPanelImg = styled.img`
-
-`
+    width: 100%;
+`;

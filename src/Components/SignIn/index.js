@@ -1,6 +1,8 @@
 import React from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
-import '../Fonts/Poppins-Black.ttf'
+import '../Fonts/Poppins-Black.ttf';
+import RPI from '../../Images/svg-11.svg'
+import LPI from '../../Images/svg-12.svg'
 import {    
     Container,
     FormWrap,
@@ -21,6 +23,8 @@ import {
     PanelP,
     LeftPanel,
     RightPanel,
+    LPC,
+    RPC
 
 } from './SigninElements';
 
@@ -69,18 +73,22 @@ const SignIn = () => {
 
              <PanelsContainer>
                 <LeftPanel>
-                    <PanelH3>New here?</PanelH3>
-                    <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
-                    <FormButton>Sign Up</FormButton>
-                    <LeftPanelImg />
-                </LeftPanel>
-                
+                    <LPC>
+                        <PanelH3>New here?</PanelH3>
+                        <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
+                        <FormButton>Sign Up</FormButton>
+                    </LPC>
 
+                    <LeftPanelImg src={LPI}/>
+                </LeftPanel>
                 <RightPanel>
-                    <PanelH3>One of us ?</PanelH3>
-                    <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
-                    <FormButton>Sign Up</FormButton>
-                    <RightPanelImg />
+                    <RPC>
+                        <PanelH3>One of us ?</PanelH3>
+                        <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
+                        <FormButton>Sign Up</FormButton>
+                    </RPC>
+                    
+                    <RightPanelImg src={RPI}/>
                 </RightPanel>
 
 
