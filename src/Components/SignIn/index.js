@@ -85,9 +85,9 @@ const SignIn = () => {
                     <RPC>
                         <PanelH3>One of us ?</PanelH3>
                         <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
-                        <FormButton>Sign Up</FormButton>
+                        <FormButton>Sign in</FormButton>
                     </RPC>
-                    
+
                     <RightPanelImg src={RPI}/>
                 </RightPanel>
 

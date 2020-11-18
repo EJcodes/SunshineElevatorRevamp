@@ -124,7 +124,6 @@ export const Container = styled.div`
     background-color: #fff;
     overflow: hidden; 
     
-    
     &:before {
     content: '';
     position: absolute;
@@ -135,6 +134,7 @@ export const Container = styled.div`
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
+    z-index: 6;
     }
 `;
 
@@ -155,7 +155,7 @@ export const FormContent = styled.div`
     width: 50%;
     display: grid; 
     grid-templates-columns: 1fr;
-   
+    z-index: 5;
 `;
 
 
@@ -251,15 +251,24 @@ export const FormButton = styled.button`
     border-radius: 49px;
     cursor: pointer:
     background-color: #5995fd;
-    color: #fff
+    color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     margin: 10px 0;
     transition: .5s;
+    transparent:
+        margin:0;
+        background: none;
+        border:2px solid #fff;
+        width: 130px;
+        height: 41px;
+        font-weight: 600;
+        font-size: 0.8rem;
+    
 
     &:hover{
         background-color: #4d84e2;
-    }
+    };
 `;
 
 export const Text = styled.span`
@@ -268,15 +277,7 @@ export const Text = styled.span`
     color: #618DAF;
     font-size: 14px;
 
-    .transparent{
-        margin: 0;
-        background: none;
-        border: 2px solid #fff;
-        width: 130px;
-        height: 41px;
-        font-weight: 600;
-        font-size: 0.8rem;
-    }
+
 `;
 
 
@@ -314,7 +315,6 @@ export const SocialMediaIcon = styled.div`
 
 
 // panels Styled Components below
-
 export const PanelsContainer = styled.div`
     position: absolute;
     width: 100%;
@@ -328,29 +328,35 @@ export const PanelsContainer = styled.div`
 `;
 
 export const LeftPanel = styled.div`
-    color: #fff;
-    padding: 3rem 17% 2rem 12%;
+    pointer-events: all;
+    color: #fff;: 3rem 17% 2rem 12%;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
+    z-index: 7;
 `;
 
 export const RightPanel = styled.div`
-    color: #fff;
+    pointer-events: none;
+   
     padding: 3rem 12% 2rem 17%;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
+    z-index 7;
 `;
 
 export const RPC = styled.div`
     color: #fff;
+    pointer-events: none;
+    transform: translateX(800px);
 `
 export const LPC = styled.div`
+    pointer-events: all;
     color: #fff;
 `
 
@@ -366,6 +372,7 @@ export const PanelP = styled.p`
 `;
 export const RightPanelImg = styled.img`
     width: 100%;
+    transform: translateX(800px);
 
 `;
 export const LeftPanelImg = styled.img`
