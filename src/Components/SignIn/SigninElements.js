@@ -135,6 +135,7 @@ export const Container = styled.div`
     right: 48%;
     transform: translateY(-50%);
     z-index: 6;
+    transition: 1.8s ease-in-out;
     }
 `;
 
@@ -378,3 +379,9 @@ export const RightPanelImg = styled.img`
 export const LeftPanelImg = styled.img`
     width: 100%;
 `;
+
+
+
+// Animation for the SignIn/SignOut
+
+

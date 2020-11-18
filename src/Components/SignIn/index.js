@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
 import RPI from '../../Images/svg-11.svg'
@@ -24,12 +24,12 @@ import {
     LeftPanel,
     RightPanel,
     LPC,
-    RPC
-
+    RPC,
+    
 } from './SigninElements';
 
 const SignIn = () => {
-
+    
     return (
         <>
          <Container>
