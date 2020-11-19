@@ -29,10 +29,10 @@ import {
 } from './SigninElements';
 
 const SignIn = () => {
-    
+
     return (
         <>
-         <Container>
+         <Container props ={transform={translateY(-50%)}}>
              <FormWrap>
                  <Icon to="/">Sunshine Elevator</Icon>
                  <FormContent>    
@@ -46,7 +46,7 @@ const SignIn = () => {
                             <Icon2><FaLock/></Icon2>
                             <FormInput type='password' required placeholder='Password' />
                          </InputField>
-                         <FormButton type='submit'>Continue</FormButton>
+                         <FormButton type='submit' >Continue</FormButton>
                          <Text>Forgot password</Text>
                      </Form>
 
@@ -64,7 +64,7 @@ const SignIn = () => {
                             <Icon2><FaLock/></Icon2>
                             <FormInput type='password' required placeholder='Password' />
                          </InputField>
-                         <FormButton type='submit'>Continue</FormButton>
+                         <FormButton>Continue</FormButton>
                          <Text>Forgot password</Text>
                      </SignUpForm>
 
@@ -76,7 +76,7 @@ const SignIn = () => {
                     <LPC>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
-                        <FormButton>Sign Up</FormButton>
+                        <FormButton type='submit' onClick={() => {console.log('e')}}>Sign Up</FormButton>
                     </LPC>
 
                     <LeftPanelImg src={LPI}/>

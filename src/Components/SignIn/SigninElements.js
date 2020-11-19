@@ -133,7 +133,7 @@ export const Container = styled.div`
     background: linear-gradient(-45deg, #4481eb, #04befe);
     top: -10%;
     right: 48%;
-    transform: translateY(-50%);
+    transform: ${props};
     z-index: 6;
     transition: 1.8s ease-in-out;
     }
