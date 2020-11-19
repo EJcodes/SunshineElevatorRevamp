@@ -28,11 +28,14 @@ import {
     
 } from './SigninElements';
 
-const SignIn = () => {
 
+
+const SignIn = () => {
+    const original = "translateY(-50%)";
+    const animate = "translate"
     return (
         <>
-         <Container props ={transform={translateY(-50%)}}>
+         <Container>
              <FormWrap>
                  <Icon to="/">Sunshine Elevator</Icon>
                  <FormContent>    

@@ -133,11 +133,13 @@ export const Container = styled.div`
     background: linear-gradient(-45deg, #4481eb, #04befe);
     top: -10%;
     right: 48%;
-    transform: ${props};
+    transform:translateY(-50%);
     z-index: 6;
     transition: 1.8s ease-in-out;
     }
-`;
+    `;
+    
+
 
 export const FormWrap = styled.div`
     position: absolute;
@@ -315,7 +317,7 @@ export const SocialMediaIcon = styled.div`
 `;
 
 
-// panels Styled Components below
+// Styled Components for the Panels below
 export const PanelsContainer = styled.div`
     position: absolute;
     width: 100%;
