@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import containerAnimation from '../Animation/containerAnimation'
 
 
 // export const Container = styled.div`
@@ -115,15 +116,16 @@ import { Link } from 'react-router-dom';
                     // `;
                     
                     // Second Style For Login Sign Up
-                    
-                    
+
+
+
 export const Container = styled.div`
     position: relative;
     width: 100%;
     min-height: 100vh;
     background-color: #fff;
     overflow: hidden; 
-    
+
     &:before {
     content: '';
     position: absolute;
@@ -132,13 +134,12 @@ export const Container = styled.div`
     border-radius: 50%;
     background: linear-gradient(-45deg, #4481eb, #04befe);
     top: -10%;
-    right: 48%;
-    transform:translateY(-50%);
+    right: ${props => props.right};
+    transform:${props => props.transform};
     z-index: 6;
     transition: 1.8s ease-in-out;
     }
-    `;
-    
+`;
 
 
 export const FormWrap = styled.div`

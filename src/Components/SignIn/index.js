@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
-import RPI from '../../Images/svg-11.svg'
-import LPI from '../../Images/svg-12.svg'
+import RPI from '../../Images/svg-11.svg';
+import LPI from '../../Images/svg-12.svg';
+
 import {    
     Container,
     FormWrap,
@@ -30,12 +31,13 @@ import {
 
 
 
-const SignIn = () => {
-    const original = "translateY(-50%)";
-    const animate = "translate"
+const SignIn = (props) => {
+
+
+
     return (
         <>
-         <Container>
+         <Container transform="translateY(-50%)" right="48%">
              <FormWrap>
                  <Icon to="/">Sunshine Elevator</Icon>
                  <FormContent>    
