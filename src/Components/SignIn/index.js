@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import styled from 'styled-components';
+import React, { useState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
 import RPI from '../../Images/svg-11.svg';
@@ -55,15 +54,7 @@ const SignIn = props => {
             RightImgCss:[{transform: `translateX(0px);`}]
         });   
     };
-    // SignIn Transition right Img
-    let [cssTranRightImg, setCssTranRightImg] = useState({
-        RightImgCss:[`transform: translateX(800px);`]
-
-    })
-
-    const rightImgTransitionHandler = () => {
-        setCssTransitions({rightImgCss:[{transform:`transform: translateX(0px);`}]});
-    }
+   
 
     return (
         <>
@@ -116,8 +107,8 @@ const SignIn = props => {
 
                     <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
                 </LeftPanel>
-                <RightPanel>
-                    <RPC>
+                <RightPanel transform={CssTransitions.RightImgCss[0].transform}>
+                    <RPC transform={CssTransitions.RightImgCss[0].transform}>
                         <PanelH3>One of us ?</PanelH3>
                         <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
                         <FormButton>Sign in</FormButton>
