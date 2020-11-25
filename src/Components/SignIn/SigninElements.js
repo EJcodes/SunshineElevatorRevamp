@@ -351,13 +351,14 @@ export const RightPanel = styled.div`
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
+    transition: .9s .6s ease-in-out;
     z-index 7;
 `;
 
 export const RPC = styled.div`
     color: #fff;
     pointer-events: none;
-    transform: translateX(800px);
+    ${props => props.transform};
     
 `
 export const LPC = styled.div`
@@ -379,12 +380,13 @@ export const PanelP = styled.p`
 `;
 export const RightPanelImg = styled.img`
     width: 100%;
-    transform: translateX(800px);
+    transition: 1.1s .4s ease-in-out;
+    transform: ${props => props.transform};
 `;
 export const LeftPanelImg = styled.img`
     width: 100%;
     transform: ${props => props.transform};
-    transition: .9s .6s ease-in-out;
+    transition: 1.1s .4s ease-in-out;
      
 `;
 

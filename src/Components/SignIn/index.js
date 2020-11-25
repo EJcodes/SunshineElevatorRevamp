@@ -33,17 +33,17 @@ import {
 
 
 const SignIn = props => {
-    let animation = false;
+    //Sign Up transition for left IMG, Container    
     let [CssTransitions, setCssTransitions] = useState({
         ContainerCss:[
             {transform: `translateY(-50%);` , right: '48%'},
         ],
         LeftImgCss:[
             {transform: `none;`}
-        ]
-    })
-
-  
+        ],
+        RightImgCss:[{transform: `translateX(800px);`}]
+    });
+ 
     const containerTransitionHandler = () => {
         setCssTransitions({
             ContainerCss:[
@@ -51,11 +51,19 @@ const SignIn = props => {
             ],
             LeftImgCss:[
                 {transform:`translateX(-850px);`}
-            ]
-        });
-        
+            ],
+            RightImgCss:[{transform: `translateX(0px);`}]
+        });   
+    };
+    // SignIn Transition right Img
+    let [cssTranRightImg, setCssTranRightImg] = useState({
+        RightImgCss:[`transform: translateX(800px);`]
+
+    })
+
+    const rightImgTransitionHandler = () => {
+        setCssTransitions({rightImgCss:[{transform:`transform: translateX(0px);`}]});
     }
-   
 
     return (
         <>
@@ -115,7 +123,7 @@ const SignIn = props => {
                         <FormButton>Sign in</FormButton>
                     </RPC>
 
-                    <RightPanelImg src={RPI}/>
+                    <RightPanelImg src={RPI} transform={CssTransitions.RightImgCss[0].transform}/>
                 </RightPanel>
 
 
