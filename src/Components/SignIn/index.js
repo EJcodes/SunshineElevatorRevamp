@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
+import styled from 'styled-components';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
 import RPI from '../../Images/svg-11.svg';
@@ -31,13 +32,29 @@ import {
 
 
 
-const SignIn = (props) => {
+const SignIn = props => {
+    let animation = false;
 
-
+    let [containerCSS, setContainerCSS] = useState({
+        css:[
+            {transform: `translateY(-50%);` , right: '48%'},
+            {transform: `translate(100%, -50%);` , right: '52%'}
+        ]
+    })
+    
+    const containerTransitionHandler = () => {
+        setContainerCSS({
+            css:[
+                {transform: `translate(100%, -50%);` , right: '51%'}
+            ]
+        })
+        
+    }
+   
 
     return (
         <>
-         <Container transform="translateY(-50%)" right="48%">
+            <Container transform={containerCSS.css[0].transform} right={containerCSS.css[0].right} >
              <FormWrap>
                  <Icon to="/">Sunshine Elevator</Icon>
                  <FormContent>    
@@ -81,7 +98,7 @@ const SignIn = (props) => {
                     <LPC>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
-                        <FormButton type='submit' onClick={() => {console.log('e')}}>Sign Up</FormButton>
+                        <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>
                     </LPC>
 
                     <LeftPanelImg src={LPI}/>
