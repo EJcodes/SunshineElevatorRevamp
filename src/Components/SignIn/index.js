@@ -34,27 +34,32 @@ import {
 
 const SignIn = props => {
     let animation = false;
-
-    let [containerCSS, setContainerCSS] = useState({
-        css:[
+    let [CssTransitions, setCssTransitions] = useState({
+        ContainerCss:[
             {transform: `translateY(-50%);` , right: '48%'},
-            {transform: `translate(100%, -50%);` , right: '52%'}
+        ],
+        LeftImgCss:[
+            {transform: `none;`}
         ]
     })
-    
+
+  
     const containerTransitionHandler = () => {
-        setContainerCSS({
-            css:[
+        setCssTransitions({
+            ContainerCss:[
                 {transform: `translate(100%, -50%);` , right: '51%'}
+            ],
+            LeftImgCss:[
+                {transform:`translateX(-850px);`}
             ]
-        })
+        });
         
     }
    
 
     return (
         <>
-            <Container transform={containerCSS.css[0].transform} right={containerCSS.css[0].right} >
+            <Container transform={CssTransitions.ContainerCss[0].transform} right={CssTransitions.ContainerCss[0].right} >
              <FormWrap>
                  <Icon to="/">Sunshine Elevator</Icon>
                  <FormContent>    
@@ -101,7 +106,7 @@ const SignIn = props => {
                         <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>
                     </LPC>
 
-                    <LeftPanelImg src={LPI}/>
+                    <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
                 </LeftPanel>
                 <RightPanel>
                     <RPC>

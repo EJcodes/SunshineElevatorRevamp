@@ -327,6 +327,7 @@ export const PanelsContainer = styled.div`
     left: 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+   
 
     
 `;
@@ -344,7 +345,6 @@ export const LeftPanel = styled.div`
 
 export const RightPanel = styled.div`
     pointer-events: none;
-   
     padding: 3rem 12% 2rem 17%;
     display:flex;
     flex-direction: column;
@@ -358,10 +358,13 @@ export const RPC = styled.div`
     color: #fff;
     pointer-events: none;
     transform: translateX(800px);
+    
 `
 export const LPC = styled.div`
     pointer-events: all;
     color: #fff;
+    transition: .9s .6s ease-in-out;
+    
 `
 
 export const PanelH3 = styled.h3`
@@ -377,10 +380,12 @@ export const PanelP = styled.p`
 export const RightPanelImg = styled.img`
     width: 100%;
     transform: translateX(800px);
-
 `;
 export const LeftPanelImg = styled.img`
     width: 100%;
+    transform: ${props => props.transform};
+    transition: .9s .6s ease-in-out;
+     
 `;
 
 
