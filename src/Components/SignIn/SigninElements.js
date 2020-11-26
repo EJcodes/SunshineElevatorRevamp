@@ -154,11 +154,12 @@ export const FormWrap = styled.div`
 export const FormContent = styled.div`
     position: absolute;
     top: 50%;
-    left: 75%;
+    left: ${props => props.left};
     transform: translate(-50%, -50%);
     width: 50%;
     display: grid; 
     grid-templates-columns: 1fr;
+    transition: 1.1 .6s ease-in-out;
     z-index: 5;
 `;
 
@@ -389,7 +390,7 @@ export const RightPanelImg = styled.img`
 export const LeftPanelImg = styled.img`
     width: 100%;
     transform: ${props => props.transform};
-    transition: 1.1s .4s ease-in-out;
+    transition: .9s .6s ease-in-out;
      
 `;
 

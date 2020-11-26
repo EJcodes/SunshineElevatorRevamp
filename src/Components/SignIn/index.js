@@ -37,6 +37,9 @@ const SignIn = props => {
         ContainerCss:[
             {transform: `translateY(-50%);` , right: '48%'},
         ],
+        FormContent:[
+            {left: `75%`}
+        ],
         LeftImgCss:[
             {transform: `none;`}
         ],
@@ -59,6 +62,9 @@ const SignIn = props => {
             ContainerCss:[
                 {transform: `translate(100%, -50%);` , right: '51%'}
             ],
+            FormContent:[{
+                left: `25%`
+            }],
             LeftImgCss:[
                 {transform:`translateX(-850px);`}
             ],
@@ -77,13 +83,12 @@ const SignIn = props => {
         });   
     };
    
-
+    
     return (
         <>
             <Container transform={CssTransitions.ContainerCss[0].transform} right={CssTransitions.ContainerCss[0].right} >
              <FormWrap>
-                 <Icon to="/">Sunshine Elevator</Icon>
-                 <FormContent>    
+                 <FormContent left={CssTransitions.FormContent[0].left}>    
                      <Form action="#">
                          <FormH1>Sign in</FormH1>
                          <InputField> 
