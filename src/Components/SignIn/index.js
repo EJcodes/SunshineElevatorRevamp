@@ -40,9 +40,18 @@ const SignIn = props => {
         LeftImgCss:[
             {transform: `none;`}
         ],
-        RightImgCss:[{transform: `translateX(800px);`}],
-        LPCpointerEvents:[{pointerEvents: `all;`}],
-        RPCpointerEvents:[{pointerEvents: `none;`}],
+        LPContent:[
+            {transform:`none`}
+        ],
+        RightImgCss:[
+            {transform: `translateX(800px);`}
+        ],
+        LPCpointerEvents:[
+            {pointerEvents: `all;`}
+        ],
+        RPCpointerEvents:[
+            {pointerEvents: `none;`}
+        ],
     });
  
     const containerTransitionHandler = () => {
@@ -53,9 +62,18 @@ const SignIn = props => {
             LeftImgCss:[
                 {transform:`translateX(-850px);`}
             ],
-            RightImgCss:[{transform: `translateX(0px);`}],
-            LPCpointerEvents:[{pointerEvents: `none;`}],
-            RPCpointerEvents:[{pointerEvents: `all;`}],
+            LPContent:[
+                {transform:`translateX(-800px)`}
+            ],
+            RightImgCss:[
+                {transform: `translateX(0px);`}
+            ],
+            LPCpointerEvents:[
+                {pointerEvents: `none;`}
+            ],
+            RPCpointerEvents:[
+                {pointerEvents: `all;`}
+            ],
         });   
     };
    
@@ -102,8 +120,8 @@ const SignIn = props => {
              </FormWrap>
 
              <PanelsContainer>
-                <LeftPanel>
-                    <LPC pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
+                <LeftPanel >
+                    <LPC transform={CssTransitions.LPContent[0].transform} pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
                         <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>

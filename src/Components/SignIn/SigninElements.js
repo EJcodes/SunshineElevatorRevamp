@@ -340,6 +340,7 @@ export const LeftPanel = styled.div`
     align-items: flex-end;
     justify-content: space-around;
     text-align: center;
+    transition: .9s .6s ease-in-out;
     z-index: 7;
 `;
 
@@ -365,7 +366,8 @@ export const RPC = styled.div`
 export const LPC = styled.div`
     pointer-events: ${props => props.pointerEvents};
     color: #fff;
-    transition: .9s .6s ease-in-out;
+    transition: 1.1s .4s ease-in-out;
+    transform: ${props => props.transform};
     
 `
 
