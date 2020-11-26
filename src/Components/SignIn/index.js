@@ -40,7 +40,9 @@ const SignIn = props => {
         LeftImgCss:[
             {transform: `none;`}
         ],
-        RightImgCss:[{transform: `translateX(800px);`}]
+        RightImgCss:[{transform: `translateX(800px);`}],
+        LPCpointerEvents:[{pointerEvents: `all;`}],
+        RPCpointerEvents:[{pointerEvents: `none;`}],
     });
  
     const containerTransitionHandler = () => {
@@ -51,7 +53,9 @@ const SignIn = props => {
             LeftImgCss:[
                 {transform:`translateX(-850px);`}
             ],
-            RightImgCss:[{transform: `translateX(0px);`}]
+            RightImgCss:[{transform: `translateX(0px);`}],
+            LPCpointerEvents:[{pointerEvents: `none;`}],
+            RPCpointerEvents:[{pointerEvents: `all;`}],
         });   
     };
    
@@ -99,7 +103,7 @@ const SignIn = props => {
 
              <PanelsContainer>
                 <LeftPanel>
-                    <LPC>
+                    <LPC pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
                         <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>
@@ -108,7 +112,10 @@ const SignIn = props => {
                     <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
                 </LeftPanel>
                 <RightPanel >
-                    <RPC transform={CssTransitions.RightImgCss[0].transform}>
+                    <RPC 
+                    transform={CssTransitions.RightImgCss[0].transform} 
+                    pointerEvents={CssTransitions.RPCpointerEvents[0].pointerEvents}
+                    >
                         <PanelH3>One of us ?</PanelH3>
                         <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
                         <FormButton>Sign in</FormButton>

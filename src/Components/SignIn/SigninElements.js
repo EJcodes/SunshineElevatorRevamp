@@ -357,13 +357,13 @@ export const RightPanel = styled.div`
 
 export const RPC = styled.div`
     color: #fff;
-    pointer-events: none;
+    pointer-events: ${props => props.pointerEvents};
     transition: 1.1s .4s ease-in-out;
     transform: ${props => props.transform};
     
 `
 export const LPC = styled.div`
-    pointer-events: all;
+    pointer-events: ${props => props.pointerEvents};
     color: #fff;
     transition: .9s .6s ease-in-out;
     
