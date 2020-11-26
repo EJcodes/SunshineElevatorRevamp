@@ -175,7 +175,9 @@ padding: 0 5rem;
 overflow: hidden;
 grid-column: 1 / 2;
 gird-row: 1 / 2; 
-z-index: 2;
+z-index: ${props => props.zIndex};
+opacity: ${props => props.opacity};
+
 `;
 
 export const SignUpForm = styled.form`
@@ -188,8 +190,9 @@ padding: 0 5rem;
 overflow:hidden;
 grid-column: 1 / 2;
 gird-row: 1 / 2; 
-z-index: 1;
-opacity: 0; 
+transform: ${props => props.transform};
+z-index: ${props => props.zIndex};
+opacity: ${props => props.opacity}; 
 `;
 
 export const InputField = styled.div`

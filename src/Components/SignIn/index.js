@@ -55,6 +55,12 @@ const SignIn = props => {
         RPCpointerEvents:[
             {pointerEvents: `none;`}
         ],
+        signInform:[
+            {zIndex:`2`, opactity:`1` }
+        ],
+        signUpform:[
+            {zIndex:`1`, opactity:`0`,transformY:`none` }
+        ]
     });
  
     const containerTransitionHandler = () => {
@@ -80,6 +86,12 @@ const SignIn = props => {
             RPCpointerEvents:[
                 {pointerEvents: `all;`}
             ],
+            signInform:[
+                {zIndex:`1`, opactity:`0` }
+            ],
+            signUpform:[
+                {zIndex:`2`, opactity:`1`,transformY:`500px` }
+            ]
         });   
     };
    
@@ -89,7 +101,7 @@ const SignIn = props => {
             <Container transform={CssTransitions.ContainerCss[0].transform} right={CssTransitions.ContainerCss[0].right} >
              <FormWrap>
                  <FormContent left={CssTransitions.FormContent[0].left}>    
-                     <Form action="#">
+                     <Form action="#" opacity={CssTransitions.signInform[0].opactity} zIndex={CssTransitions.signInform[0].zIndex}>
                          <FormH1>Sign in</FormH1>
                          <InputField> 
                             <Icon2><FaUserAlt/></Icon2>
@@ -103,7 +115,10 @@ const SignIn = props => {
                          <Text>Forgot password</Text>
                      </Form>
 
-                     <SignUpForm action="#">
+                     <SignUpForm action="#" 
+                     opacity={CssTransitions.signUpform[0].opactity}
+                     zIndex={CssTransitions.signUpform[0].zIndex} 
+                     transform={CssTransitions.signUpform[0].transform}>
                         <FormH1>Sign Up</FormH1>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
