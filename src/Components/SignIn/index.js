@@ -107,7 +107,7 @@ const SignIn = props => {
 
                     <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
                 </LeftPanel>
-                <RightPanel transform={CssTransitions.RightImgCss[0].transform}>
+                <RightPanel >
                     <RPC transform={CssTransitions.RightImgCss[0].transform}>
                         <PanelH3>One of us ?</PanelH3>
                         <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
