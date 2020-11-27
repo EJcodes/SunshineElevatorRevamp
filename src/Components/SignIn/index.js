@@ -72,7 +72,7 @@ const SignIn = props => {
                 left: `25%`
             }],
             LeftImgCss:[
-                {transform:`translateX(-850px);`}
+                {transform:`translateX(-900px);`}
             ],
             LPContent:[
                 {transform:`translateX(-800px)`}
