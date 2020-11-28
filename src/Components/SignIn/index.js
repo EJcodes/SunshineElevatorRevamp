@@ -94,6 +94,38 @@ const SignIn = props => {
             ]
         });   
     };
+
+    const containerTransitionHandlerRevert = () => {
+        setCssTransitions({
+        ContainerCss:[
+            {transform: `translateY(-50%);` , right: '48%'},
+        ],
+        FormContent:[
+            {left: `75%`}
+        ],
+        LeftImgCss:[
+            {transform: `none;`}
+        ],
+        LPContent:[
+            {transform:`none`}
+        ],
+        RightImgCss:[
+            {transform: `translateX(800px);`}
+        ],
+        LPCpointerEvents:[
+            {pointerEvents: `all;`}
+        ],
+        RPCpointerEvents:[
+            {pointerEvents: `none;`}
+        ],
+        signInform:[
+            {zIndex:`2`, opactity:`1` }
+        ],
+        signUpform:[
+            {zIndex:`1`, opactity:`0`,transformY:`none` }
+        ]
+        });
+    };
    
     
     return (
@@ -156,7 +188,7 @@ const SignIn = props => {
                     >
                         <PanelH3>One of us ?</PanelH3>
                         <PanelP>Welcome back person that has been here before. How are you doing today?</PanelP>
-                        <FormButton>Sign in</FormButton>
+                        <FormButton onClick={containerTransitionHandlerRevert}>Sign in</FormButton>
                     </RPC>
 
                     <RightPanelImg src={RPI} transform={CssTransitions.RightImgCss[0].transform}/>

@@ -139,6 +139,14 @@ export const Container = styled.div`
     z-index: 6;
     transition: 1.8s ease-in-out;
     }
+    @media (max-width: 870px){
+        .container{
+            min-height: 800px;
+            height: 100vh;
+        }
+        
+        
+    }
 `;
 
 
@@ -363,14 +371,14 @@ export const RightPanel = styled.div`
 export const RPC = styled.div`
     color: #fff;
     pointer-events: ${props => props.pointerEvents};
-    transition: 1.1s .4s ease-in-out;
+    transition: 1.1s .6s ease-in-out;
     transform: ${props => props.transform};
     
 `
 export const LPC = styled.div`
     pointer-events: ${props => props.pointerEvents};
     color: #fff;
-    transition: 1.1s .4s ease-in-out;
+    transition: 1.1s .6s ease-in-out;
     transform: ${props => props.transform};
     
 `
@@ -393,7 +401,7 @@ export const RightPanelImg = styled.img`
 export const LeftPanelImg = styled.img`
     width: 100%;
     transform: ${props => props.transform};
-    transition: .9s .6s ease-in-out;
+    transition: 1.1s .4s ease-in-out;
      
 `;
 
