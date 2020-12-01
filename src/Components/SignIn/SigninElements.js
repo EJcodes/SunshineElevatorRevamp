@@ -139,16 +139,15 @@ export const Container = styled.div`
     z-index: 6;
     transition: 1.8s ease-in-out;
     }
-    @media (max-width: 870px){
-        .container{
-            min-height: 800px;
-            height: 100vh;
+
+    @media(max-width: 870px){
+        min-height: 800px;
+        height: 100vh;
+        &:before {
+            display:none;
         }
-        
-        
     }
 `;
-
 
 export const FormWrap = styled.div`
     position: absolute;
@@ -167,11 +166,17 @@ export const FormContent = styled.div`
     width: 50%;
     display: grid; 
     grid-templates-columns: 1fr;
-    transition: 1.1 .6s ease-in-out;
+    transition: 1s .7s ease-in-out;
     z-index: 5;
+   
+
+@media(max-width: 870px){
+    width:100%;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+   }
 `;
-
-
 
 export const Form = styled.form`
 font-family: 'Poppins', sans-serif;
@@ -185,6 +190,7 @@ grid-column: 1 / 2;
 gird-row: 1 / 2; 
 z-index: ${props => props.zIndex};
 opacity: ${props => props.opacity};
+transition: 0.2s 0.7s ease-in-out;
 
 `;
 
@@ -200,7 +206,8 @@ grid-column: 1 / 2;
 gird-row: 1 / 2; 
 transform: ${props => props.transform};
 z-index: ${props => props.zIndex};
-opacity: ${props => props.opacity}; 
+opacity: ${props => props.opacity};
+transition: 0.2s 0.7s ease-in-out; 
 `;
 
 export const InputField = styled.div`
@@ -214,6 +221,7 @@ export const InputField = styled.div`
     grid-template-columns: 15% 85%;
     padding: 0 .4rem;
 `
+
 export const FormInput = styled.input`
     background: none;
     outline: none;
@@ -258,7 +266,6 @@ export const Icon = styled(Link)`
      }
 `;
 
-
 export const FormButton = styled.button`
     width: 150px;
     height: 49px;
@@ -296,8 +303,6 @@ export const Text = styled.span`
 
 `;
 
-
-
 // Styled Components for Social Media links
 export const SocialText= styled.p`
     padding: .7rem 0;
@@ -329,7 +334,6 @@ export const SocialMediaIcon = styled.div`
     }
 `;
 
-
 // Styled Components for the Panels below
 export const PanelsContainer = styled.div`
     position: absolute;
@@ -338,15 +342,20 @@ export const PanelsContainer = styled.div`
     top: 0;
     left: 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-   
-
+    grid-template-columns: repeat(2, 1fr);   
     
+    @media(max-width: 870px){
+        background-color: green;
+        z-index: 10;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
 `;
 
 export const LeftPanel = styled.div`
     pointer-events: all;
-    color: #fff;: 3rem 17% 2rem 12%;
+    color: #fff;
+    padding: 3rem 17% 2rem 12%;
     display:flex;
     flex-direction: column;
     align-items: flex-end;
@@ -354,6 +363,12 @@ export const LeftPanel = styled.div`
     text-align: center;
     transition: .9s .6s ease-in-out;
     z-index: 7;
+
+    @media(max-width: 870px){
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 `;
 
 export const RightPanel = styled.div`
@@ -366,6 +381,12 @@ export const RightPanel = styled.div`
     text-align: center;
     transition: .9s .6s ease-in-out;
     z-index 7;
+
+    @media(max-width: 870px){
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 `;
 
 export const RPC = styled.div`
@@ -374,12 +395,17 @@ export const RPC = styled.div`
     transition: 1.1s .6s ease-in-out;
     transform: ${props => props.transform};
     
+     @media(max-width: 870px){
+         transform: translateX(0px)
+     }
+    }
 `
 export const LPC = styled.div`
     pointer-events: ${props => props.pointerEvents};
     color: #fff;
     transition: 1.1s .6s ease-in-out;
     transform: ${props => props.transform};
+    
     
 `
 
@@ -397,16 +423,24 @@ export const RightPanelImg = styled.img`
     width: 100%;
     transition: 1.1s .4s ease-in-out;
     transform: ${props => props.transform};
+
+    @media(max-width: 870px){
+        transform: translateX(0px);
+        width: 200px;
+    }
 `;
 export const LeftPanelImg = styled.img`
     width: 100%;
     transform: ${props => props.transform};
     transition: 1.1s .4s ease-in-out;
      
+    @media(max-width: 870px){
+        width: 200px;
+    }
 `;
 
 
 
-// Animation for the SignIn/SignOut
+
 
 

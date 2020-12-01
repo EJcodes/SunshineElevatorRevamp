@@ -41,25 +41,25 @@ const SignIn = props => {
             {left: `75%`}
         ],
         LeftImgCss:[
-            {transform: `none;`}
+            {transform: `none`}
         ],
         LPContent:[
             {transform:`none`}
         ],
         RightImgCss:[
-            {transform: `translateX(800px);`}
+            {transform: `translateX(800px)`}
         ],
         LPCpointerEvents:[
-            {pointerEvents: `all;`}
+            {pointerEvents: `all`}
         ],
         RPCpointerEvents:[
-            {pointerEvents: `none;`}
+            {pointerEvents: `none`}
         ],
         signInform:[
             {zIndex:`2`, opactity:`1` }
         ],
-        signUpform:[
-            {zIndex:`1`, opactity:`0`,transformY:`none` }
+        signUpForm:[
+            {zIndex:`1`, opactity:`0`, transform:`none` }
         ]
     });
  
@@ -72,26 +72,26 @@ const SignIn = props => {
                 left: `25%`
             }],
             LeftImgCss:[
-                {transform:`translateX(-900px);`}
+                {transform:`translateX(-900px)`}
             ],
             LPContent:[
                 {transform:`translateX(-800px)`}
             ],
             RightImgCss:[
-                {transform: `translateX(0px);`}
+                {transform: `translateX(0px)`}
             ],
             LPCpointerEvents:[
-                {pointerEvents: `none;`}
+                {pointerEvents: `none`}
             ],
             RPCpointerEvents:[
-                {pointerEvents: `all;`}
+                {pointerEvents: `all`}
             ],
             signInform:[
                 {zIndex:`1`, opactity:`0` }
             ],
-            signUpform:[
-                {zIndex:`2`, opactity:`1`,transformY:`500px` }
-            ]
+            signUpForm:[
+                {zIndex:`2`, opactity:`1`, transform:`left: 25%` }
+            ] 
         });   
     };
 
@@ -104,25 +104,25 @@ const SignIn = props => {
             {left: `75%`}
         ],
         LeftImgCss:[
-            {transform: `none;`}
+            {transform: `none`}
         ],
         LPContent:[
             {transform:`none`}
         ],
         RightImgCss:[
-            {transform: `translateX(800px);`}
+            {transform: `translateX(800px)`}
         ],
         LPCpointerEvents:[
-            {pointerEvents: `all;`}
+            {pointerEvents: `all`}
         ],
         RPCpointerEvents:[
-            {pointerEvents: `none;`}
+            {pointerEvents: `all`}
         ],
         signInform:[
             {zIndex:`2`, opactity:`1` }
         ],
-        signUpform:[
-            {zIndex:`1`, opactity:`0`,transformY:`none` }
+        signUpForm:[
+            {zIndex:`1`, opactity:`0`, transform:`none` }
         ]
         });
     };
@@ -130,10 +130,13 @@ const SignIn = props => {
     
     return (
         <>
-            <Container transform={CssTransitions.ContainerCss[0].transform} right={CssTransitions.ContainerCss[0].right} >
+            <Container transform={CssTransitions.ContainerCss[0].transform} 
+            right={CssTransitions.ContainerCss[0].right} >
              <FormWrap>
                  <FormContent left={CssTransitions.FormContent[0].left}>    
-                     <Form action="#" opacity={CssTransitions.signInform[0].opactity} zIndex={CssTransitions.signInform[0].zIndex}>
+                     <Form action="#"
+                      opacity={CssTransitions.signInform[0].opactity} 
+                      zIndex={CssTransitions.signInform[0].zIndex}>
                          <FormH1>Sign in</FormH1>
                          <InputField> 
                             <Icon2><FaUserAlt/></Icon2>
@@ -148,9 +151,9 @@ const SignIn = props => {
                      </Form>
 
                      <SignUpForm action="#" 
-                     opacity={CssTransitions.signUpform[0].opactity}
-                     zIndex={CssTransitions.signUpform[0].zIndex} 
-                     transform={CssTransitions.signUpform[0].transform}>
+                     opacity={CssTransitions.signUpForm[0].opactity}
+                     zIndex={CssTransitions.signUpForm[0].zIndex} 
+                     transform={CssTransitions.signUpForm[0].transform}>
                         <FormH1>Sign Up</FormH1>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
@@ -173,7 +176,8 @@ const SignIn = props => {
 
              <PanelsContainer>
                 <LeftPanel >
-                    <LPC transform={CssTransitions.LPContent[0].transform} pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
+                    <LPC transform={CssTransitions.LPContent[0].transform}
+                     pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
                         <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>
