@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import containerAnimation from '../Animation/containerAnimation'
+
 
 
 // export const Container = styled.div`
@@ -143,9 +143,19 @@ export const Container = styled.div`
     @media(max-width: 870px){
         min-height: 800px;
         height: 100vh;
-        &:before {
-            display:none;
+
+        &:before{
+            width: 1500px;
+            height: 1500px;
+            left:30%;
+            bottom:68%;
+            transform: translateX(-50%);
+            right: initial;
+            top: initial;
+            transition: 2s ease-in-out;
+
         }
+     
     }
 `;
 
@@ -165,7 +175,7 @@ export const FormContent = styled.div`
     transform: translate(-50%, -50%);
     width: 50%;
     display: grid; 
-    grid-templates-columns: 1fr;
+    grid-template-columns: 1fr;
     transition: 1s .7s ease-in-out;
     z-index: 5;
    
@@ -292,6 +302,12 @@ export const FormButton = styled.button`
     &:hover{
         background-color: #4d84e2;
     };
+
+    @media(max-width: 870px){
+        width: 110px;
+        height: 35px;
+        font-size: 0.7rem;
+    }
 `;
 
 export const Text = styled.span`
@@ -345,8 +361,6 @@ export const PanelsContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);   
     
     @media(max-width: 870px){
-        background-color: green;
-        z-index: 10;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 2fr 1fr;
     }
@@ -368,6 +382,8 @@ export const LeftPanel = styled.div`
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        grid-row: 1 / 2;
+        padding: 2.5rem 8%; 
     }
 `;
 
@@ -386,6 +402,8 @@ export const RightPanel = styled.div`
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+        grid-row: 3 / 4;
+        padding: 2.5rem 8%;
     }
 `;
 
@@ -396,7 +414,8 @@ export const RPC = styled.div`
     transform: ${props => props.transform};
     
      @media(max-width: 870px){
-         transform: translateX(0px)
+         transform: translateY(300px)
+         padding-right: 15%;
      }
     }
 `
@@ -405,7 +424,10 @@ export const LPC = styled.div`
     color: #fff;
     transition: 1.1s .6s ease-in-out;
     transform: ${props => props.transform};
-    
+
+    @media(max-width: 870px){
+        padding-right: 15%;
+    }
     
 `
 
@@ -413,11 +435,20 @@ export const PanelH3 = styled.h3`
     font-weight: 600;
     line-height: 1;
     font-size: 1.5rem;
+
+    @media(max-width: 870px){
+        font-size: 1.2rem;
+    }
 `;
 
 export const PanelP = styled.p`
     font-size: 0.95rem;
     padding: 0.7rem 0;
+
+    @media(max-width: 870px){
+        font-size: 0.7rem;
+        padding: 0.5rem 0; 
+    }
 `;
 export const RightPanelImg = styled.img`
     width: 100%;
@@ -425,7 +456,7 @@ export const RightPanelImg = styled.img`
     transform: ${props => props.transform};
 
     @media(max-width: 870px){
-        transform: translateX(0px);
+        transform: translateY(300px);
         width: 200px;
     }
 `;
