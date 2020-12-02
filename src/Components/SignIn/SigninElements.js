@@ -147,9 +147,9 @@ export const Container = styled.div`
         &:before{
             width: 1500px;
             height: 1500px;
-            left:30%;
-            bottom:68%;
-            transform: translateX(-50%);
+            left: 30%;
+            bottom: 68%;
+            transform: ${props => props.transformMobile};
             right: initial;
             top: initial;
             transition: 2s ease-in-out;
