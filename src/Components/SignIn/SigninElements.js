@@ -183,8 +183,8 @@ export const FormContent = styled.div`
 @media(max-width: 870px){
     width:100%;
     left: 50%;
-    top: 95%;
-    transform: translate(-50%, -100%);
+    top: ${props => props.formContentMobileTop};
+    transform: ${props => props.formContentMobileTransform};
    }
 `;
 
@@ -202,6 +202,7 @@ z-index: ${props => props.zIndex};
 opacity: ${props => props.opacity};
 transition: 0.2s 0.7s ease-in-out;
 
+
 `;
 
 export const SignUpForm = styled.form`
@@ -218,6 +219,7 @@ transform: ${props => props.transform};
 z-index: ${props => props.zIndex};
 opacity: ${props => props.opacity};
 transition: 0.2s 0.7s ease-in-out; 
+
 `;
 
 export const InputField = styled.div`
@@ -276,6 +278,40 @@ export const Icon = styled(Link)`
      }
 `;
 
+export const FormButtonTrans = styled.button`
+    width: 150px;
+    height: 49px;
+    border: none;
+    outline: none;
+    border-radius: 49px;
+    cursor: pointer:
+    background-color: #5995fd;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    transition: .5s;
+    margin:0;
+    background: none;
+    border:2px solid #fff;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    
+
+    &:hover{
+        background-color: #4d84e2;
+    };
+
+    @media(max-width: 870px){
+        width: 110px;
+        height: 35px;
+        font-size: 0.7rem;
+        
+    }
+`;
+
 export const FormButton = styled.button`
     width: 150px;
     height: 49px;
@@ -289,14 +325,7 @@ export const FormButton = styled.button`
     font-weight: 600;
     margin: 10px 0;
     transition: .5s;
-    transparent:
-        margin:0;
-        background: none;
-        border:2px solid #fff;
-        width: 130px;
-        height: 41px;
-        font-weight: 600;
-        font-size: 0.8rem;
+    
     
 
     &:hover{
@@ -307,6 +336,8 @@ export const FormButton = styled.button`
         width: 110px;
         height: 35px;
         font-size: 0.7rem;
+        background-color: #5995fd;
+        
     }
 `;
 
@@ -414,6 +445,7 @@ export const RPC = styled.div`
     transform: ${props => props.transform};
     
      @media(max-width: 870px){
+         transition: 0.9s 0.8s ease-in-out;
          transform: translateY(300px)
          padding-right: 15%;
      }
@@ -427,6 +459,7 @@ export const LPC = styled.div`
 
     @media(max-width: 870px){
         padding-right: 15%;
+        transition: 0.9s 0.8s ease-in-out;
     }
     
 `
@@ -456,14 +489,15 @@ export const RightPanelImg = styled.img`
     transform: ${props => props.transform};
 
     @media(max-width: 870px){
-        transform: translateY(300px);
+        transform: ${props => props.rightImgMobile};
         width: 200px;
+        transition: 0.9s 0.6s ease-in-out;
     }
 `;
 export const LeftPanelImg = styled.img`
     width: 100%;
     transform: ${props => props.transform};
-    transition: 1.1s .4s ease-in-out;
+    transition: 1.1s .8s ease-in-out;
      
     @media(max-width: 870px){
         width: 200px;
