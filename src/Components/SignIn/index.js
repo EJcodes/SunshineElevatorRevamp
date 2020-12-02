@@ -67,7 +67,6 @@ const SignIn = props => {
              bottom:`32%`,
              right:`initial`,
              rightImgMobile:`translateY(300px)`,
-             formContentMobileTop:`5%`,
              formContentMobileTransform: `translate(-50%, 100%)`
              }
         ]
