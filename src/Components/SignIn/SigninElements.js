@@ -164,8 +164,8 @@ export const FormWrap = styled.div`
     width: 100%;
     height:100%;
     top:0;
-    left:0; 
-    
+    left:0;
+    grid-template-columns: 1fr;
 `;
 
 export const FormContent = styled.div`
@@ -174,7 +174,7 @@ export const FormContent = styled.div`
     left: ${props => props.left};
     transform: translate(-50%, -50%);
     width: 50%;
-    display: grid; 
+    display: grid;
     grid-template-columns: 1fr;
     transition: 1s .7s ease-in-out;
     z-index: 5;
@@ -197,7 +197,7 @@ flex-direction: column;
 padding: 0 5rem;
 overflow: hidden;
 grid-column: 1 / 2;
-gird-row: 1 / 2; 
+grid-row: 1 / 2; 
 z-index: ${props => props.zIndex};
 opacity: ${props => props.opacity};
 transition: 0.2s 0.7s ease-in-out;
@@ -211,9 +211,9 @@ align-items: center;
 justify-content: center;
 flex-direction: column;
 padding: 0 5rem;
-overflow:hidden;
+overflow: hidden;
 grid-column: 1 / 2;
-gird-row: 1 / 2; 
+grid-row: 1 / 2; 
 transform: ${props => props.transform};
 z-index: ${props => props.zIndex};
 opacity: ${props => props.opacity};

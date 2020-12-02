@@ -149,7 +149,6 @@ const SignIn = props => {
                          <FormButton type='submit' >Continue</FormButton>
                          <Text>Forgot password</Text>
                      </Form>
-
                      <SignUpForm action="#" 
                      opacity={CssTransitions.signUpForm[0].opactity}
                      zIndex={CssTransitions.signUpForm[0].zIndex} 
