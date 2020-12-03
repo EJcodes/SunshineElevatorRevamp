@@ -318,14 +318,13 @@ export const FormButton = styled.button`
     border: none;
     outline: none;
     border-radius: 49px;
-    cursor: pointer:
+    cursor: pointer;
     background-color: #5995fd;
     color: #fff;
     text-transform: uppercase;
     font-weight: 600;
     margin: 10px 0;
     transition: .5s;
-    
     
 
     &:hover{

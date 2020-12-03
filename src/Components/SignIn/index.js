@@ -207,7 +207,7 @@ const SignIn = props => {
                      pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>
-                        <FormButton type='submit' onClick={containerTransitionHandler}>Sign Up</FormButton>
+                        <FormButtonTrans type='submit' onClick={containerTransitionHandler}>Sign Up</FormButtonTrans>
                     </LPC>
 
                     <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
