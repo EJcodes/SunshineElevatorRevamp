@@ -36,7 +36,6 @@ export const InfoRow = styled.div`
     }
 `;
 
-
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
@@ -73,6 +72,7 @@ export const Heading= styled.h1`
     color:${({ lightText }) => (lightText ? '#010606' : '#D3602E')};
 
     @media screen and (max-width: 480px){
+        margin-top: 74px;
         font-size: 32px;
     }
 `;
@@ -93,13 +93,10 @@ export const SubtitleTwo = styled.p`
     color: ${({ darkText }) => (darkText ? '#010606' : "#fff")};
 `;
 
-
-
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
 `;
-
 
 export const ImgWrap = styled.div`
     max-width: 555px;
