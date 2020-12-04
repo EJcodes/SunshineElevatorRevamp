@@ -74,7 +74,8 @@ export const ServicesH1 = styled.h1`
         overflow: hidden;
         margin: 0 auto;
         font-size: 2rem;
-        padding-top: 50px;
+        padding-top: 35px;
+        padding-bottom: 60px;
     }
 `
 
