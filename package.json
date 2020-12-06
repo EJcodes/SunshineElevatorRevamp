@@ -1,0 +1,20 @@
+{
+  "name": "signupbackend",
+  "version": "1.0.0",
+  "description": "Sign Up Application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJcodes/SunshineElevatorBackend.git"
+  },
+  "author": "Evan Londono",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJcodes/SunshineElevatorBackend/issues"
+  },
+  "homepage": "https://github.com/EJcodes/SunshineElevatorBackend#readme"
+}
