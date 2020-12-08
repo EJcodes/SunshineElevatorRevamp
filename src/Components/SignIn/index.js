@@ -45,12 +45,10 @@ const SignIn = props => {
              username:event.target.value
         })
     
-    
     const changeEmail = (event) => 
         setSignupCred ({
              email:event.target.value
         })
-    
     
     const changePassword = (event) => 
         setSignupCred({
@@ -87,10 +85,10 @@ const SignIn = props => {
             {pointerEvents: `none`}
         ],
         signInform:[
-            {zIndex:`2`, opactity:`1` }
+            {zIndex:`2`, opacity:`1` }
         ],
         signUpForm:[
-            {zIndex:`1`, opactity:`0`, transform:`none` }
+            {zIndex:`1`, opacity:`0`, transform:`none` }
         ],
         ContainerCssMobile:[
             {transform:`translate(-50%)`,
@@ -126,10 +124,10 @@ const SignIn = props => {
                 {pointerEvents: `all`}
             ],
             signInform:[
-                {zIndex:`1`, opactity:`0` }
+                {zIndex:`1`, opacity:`0` }
             ],
             signUpForm:[
-                {zIndex:`2`, opactity:`1`, transform:`left: 25%` }
+                {zIndex:`2`, opacity:`1`, transform:`left: 25%` }
             ],
             ContainerCssMobile:[
                 {transform:`translate(-50%, 120%)`, 
@@ -167,10 +165,10 @@ const SignIn = props => {
             {pointerEvents: `all`}
         ],
         signInform:[
-            {zIndex:`2`, opactity:`1` }
+            {zIndex:`2`, opacity:`1` }
         ],
         signUpForm:[
-            {zIndex:`1`, opactity:`0`, transform:`none` }
+            {zIndex:`1`, opaccity:`0`, transform:`none` }
         ],
         ContainerCssMobile:[
             {transform:`translate(-50%)`,
@@ -183,7 +181,7 @@ const SignIn = props => {
         });
     };
     
-    const onsubmit = (event)=>{
+    const onSubmit = (event)=>{
         event.preventDefault()
 
         const registered = {
@@ -203,7 +201,7 @@ const SignIn = props => {
                  <FormContent left={CssTransitions.FormContent[0].left}
                  formContentMobileTop={CssTransitions.ContainerCssMobile[0].formContentMobileTop}>    
                      <Form action="#"
-                      opacity={CssTransitions.signInform[0].opactity} 
+                      opacity={CssTransitions.signInform[0].opacity} 
                       zIndex={CssTransitions.signInform[0].zIndex}>
                          <FormH1>Sign in</FormH1>
                          <InputField> 
@@ -222,21 +220,23 @@ const SignIn = props => {
                          <Text>Forgot password</Text>
                      </Form>
                      <SignUpForm action="#" 
-                     opacity={CssTransitions.signUpForm[0].opactity}
+                     opacity={CssTransitions.signUpForm[0].opacity}
                      zIndex={CssTransitions.signUpForm[0].zIndex} 
                      transform={CssTransitions.signUpForm[0].transform}>
                         <FormH1>Sign Up</FormH1>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
                             <FormInput 
+                            type='text'
                             onChange={changeFullname}
-                            value={signupCred .fullname}
+                            value={signupCred.fullname}
                             placeholder='Full name'
                             ></FormInput>
-                         </InputField>
+                        </InputField>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
                             <FormInput 
+                            type='text'
                             onChange={changeUsername}
                             value={signupCred.username}
                             placeholder='Username'
@@ -259,7 +259,7 @@ const SignIn = props => {
                             value={signupCred.password} 
                              />
                          </InputField>
-                         <FormButton value='submit'>Continue</FormButton>
+                         <FormButton onClick={onSubmit}value='submit'>Continue</FormButton>
                          <Text>Forgot password</Text>
                      </SignUpForm>
 
