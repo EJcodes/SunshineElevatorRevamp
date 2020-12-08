@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { component,useState,setState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
 import RPI from '../../Images/svg-11.svg';
@@ -26,13 +26,43 @@ import {
     LeftPanel,
     RightPanel,
     LPC,
-    RPC,
-    
+    RPC 
 } from './SigninElements';
 
 
 
+
+
 const SignIn = props => {
+
+    const changeFullname = (event) =>
+        setSignupCred({ 
+             fullname:event.target.value
+        });
+    
+    const changeUsername = (event) =>
+        setSignupCred({
+             username:event.target.value
+        })
+    
+    
+    const changeEmail = (event) => 
+        setSignupCred ({
+             email:event.target.value
+        })
+    
+    
+    const changePassword = (event) => 
+        setSignupCred({
+             password:event.target.value
+        })
+    const [signupCred, setSignupCred ] = useState({
+        fullName:'',
+        username:'',
+        password:'',
+        email:'',
+    })
+
     //Sign Up transition for left IMG, Container    
     let [CssTransitions, setCssTransitions] = useState({
         ContainerCss:[
@@ -71,7 +101,7 @@ const SignIn = props => {
              }
         ]
     });
- 
+    
     const containerTransitionHandler = () => {
         setCssTransitions({
             ContainerCss:[
@@ -152,7 +182,17 @@ const SignIn = props => {
         ]
         });
     };
-   
+    
+    const onsubmit = (event)=>{
+        event.preventDefault()
+
+        const registered = {
+            fullName: setSignupCred .fullName,
+            username: setSignupCred .username,
+            email: setSignupCred.email,
+            password: setSignupCred.password
+        }
+    }
     
     return (
         <>
@@ -168,11 +208,15 @@ const SignIn = props => {
                          <FormH1>Sign in</FormH1>
                          <InputField> 
                             <Icon2><FaUserAlt/></Icon2>
-                            <FormInput placeholder='Username'/>
+                            <FormInput
+                             placeholder='Username'
+                             />
                          </InputField>
-                         <InputField>
+                         <InputField >
                             <Icon2><FaLock/></Icon2>
-                            <FormInput type='password' required placeholder='Password' />
+                            <FormInput
+                             type='password'
+                             required placeholder='Password'/>
                          </InputField>
                          <FormButton type='submit' >Continue</FormButton>
                          <Text>Forgot password</Text>
@@ -184,17 +228,38 @@ const SignIn = props => {
                         <FormH1>Sign Up</FormH1>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
-                            <FormInput placeholder='Username'></FormInput>
+                            <FormInput 
+                            onChange={changeFullname}
+                            value={signupCred .fullname}
+                            placeholder='Full name'
+                            ></FormInput>
+                         </InputField>
+                        <InputField>    
+                            <Icon2><FaUserAlt/></Icon2>
+                            <FormInput 
+                            onChange={changeUsername}
+                            value={signupCred.username}
+                            placeholder='Username'
+                            ></FormInput>
                          </InputField>
                          <InputField> 
                             <Icon2><FaEnvelope/></Icon2>
-                            <FormInput type='email' required placeholder='Email'/>
+                            <FormInput
+                             type='email'
+                              required placeholder='Email'
+                              onChange={changeEmail}
+                              value={signupCred.email} />
                          </InputField>
                          <InputField>
                             <Icon2><FaLock/></Icon2>
-                            <FormInput type='password' required placeholder='Password' />
+                            <FormInput 
+                            type='password' 
+                            required placeholder='Password'
+                            onChange={changePassword}
+                            value={signupCred.password} 
+                             />
                          </InputField>
-                         <FormButton>Continue</FormButton>
+                         <FormButton value='submit'>Continue</FormButton>
                          <Text>Forgot password</Text>
                      </SignUpForm>
 
