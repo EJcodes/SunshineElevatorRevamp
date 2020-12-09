@@ -103,7 +103,7 @@ const SignIn = props => {
     const containerTransitionHandler = () => {
         setCssTransitions({
             ContainerCss:[
-                {transform: `translate(100%, -50%)` , right: '51%'}
+                {transform: `translate(100%, -50%)` , right: '48%'}
             ],
             FormContent:[{
                 left: `25%`
@@ -168,7 +168,7 @@ const SignIn = props => {
             {zIndex:`2`, opacity:`1` }
         ],
         signUpForm:[
-            {zIndex:`1`, opaccity:`0`, transform:`none` }
+            {zIndex:`1`, opacity:`0`, transform:`none` }
         ],
         ContainerCssMobile:[
             {transform:`translate(-50%)`,
@@ -231,7 +231,7 @@ const SignIn = props => {
                             onChange={changeFullname}
                             value={signupCred.fullname}
                             placeholder='Full name'
-                            ></FormInput>
+                            />
                         </InputField>
                         <InputField>    
                             <Icon2><FaUserAlt/></Icon2>
@@ -240,7 +240,7 @@ const SignIn = props => {
                             onChange={changeUsername}
                             value={signupCred.username}
                             placeholder='Username'
-                            ></FormInput>
+                            />
                          </InputField>
                          <InputField> 
                             <Icon2><FaEnvelope/></Icon2>
