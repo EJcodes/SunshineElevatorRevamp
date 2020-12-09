@@ -85,7 +85,7 @@ const SignIn = props => {
             {pointerEvents: `none`}
         ],
         signInform:[
-            {zIndex:`2`, opacity:`1` }
+            {zIndex:`2`, opacity:`1`, transform:`none` }
         ],
         signUpForm:[
             {zIndex:`1`, opacity:`0`, transform:`none` }
@@ -124,7 +124,7 @@ const SignIn = props => {
                 {pointerEvents: `all`}
             ],
             signInform:[
-                {zIndex:`1`, opacity:`0` }
+                {zIndex:`1`, opacity:`0`,  transform:`left: 25%`}
             ],
             signUpForm:[
                 {zIndex:`2`, opacity:`1`, transform:`left: 25%` }
@@ -165,7 +165,7 @@ const SignIn = props => {
             {pointerEvents: `all`}
         ],
         signInform:[
-            {zIndex:`2`, opacity:`1` }
+            {zIndex:`2`, opacity:`1`, transform:`none`}
         ],
         signUpForm:[
             {zIndex:`1`, opacity:`0`, transform:`none` }
