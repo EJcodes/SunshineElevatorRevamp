@@ -267,8 +267,12 @@ const SignIn = props => {
              </FormWrap>
 
              <PanelsContainer>
-                <LeftPanel >
-                    <LPC transform={CssTransitions.LPContent[0].transform}
+                <LeftPanel
+                 pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}
+                 transform={CssTransitions.LPContent[0].transform}
+                >
+                    <LPC
+                     transform={CssTransitions.LPContent[0].transform}
                      pointerEvents={CssTransitions.LPCpointerEvents[0].pointerEvents}>
                         <PanelH3>New here?</PanelH3>
                         <PanelP>stuff I would tell someone new to feel welcomed and valued.</PanelP>

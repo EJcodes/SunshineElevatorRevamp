@@ -398,6 +398,7 @@ export const PanelsContainer = styled.div`
 `;
 
 export const LeftPanel = styled.div`
+    transform: ${props => props.transform};
     pointer-events: all;
     color: #fff;
     padding: 3rem 17% 2rem 12%;
@@ -419,6 +420,7 @@ export const LeftPanel = styled.div`
 `;
 
 export const RightPanel = styled.div`
+    transform: ${props => props.transform};
     pointer-events: none;
     padding: 3rem 12% 2rem 17%;
     display:flex;
