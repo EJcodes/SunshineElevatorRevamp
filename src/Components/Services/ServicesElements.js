@@ -69,6 +69,7 @@ export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
     color: #D3602E;
     margin-bottom: 64px;
+    margin-top: 34px;
     
     @media screen and (max-width: 480px){
         overflow: hidden;

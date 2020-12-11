@@ -15,8 +15,16 @@ import {
 const Services = () => {
     return (
         <ServicesContainer id='services'>
-                <ServicesH1>Our Services</ServicesH1>
+            <ServicesH1>Our Services</ServicesH1>
             <ServicesWrapper>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3}/>
+                    <ServicesH2>Avoid expired Certificates</ServicesH2>
+                    <ServicesP>Every year, a month before the Certificate of Operation expires, we'll perform
+                        a FREE pre-inspection. This extra time will allows us to correct violations before the official
+                        inspection.
+                    </ServicesP>
+                </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon src={Icon1}/>
                     <ServicesH2>Reduce Expenses</ServicesH2>
