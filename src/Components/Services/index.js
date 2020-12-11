@@ -20,9 +20,9 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon src={Icon3}/>
                     <ServicesH2>Avoid expired Certificates</ServicesH2>
-                    <ServicesP>Every year, a month before the Certificate of Operation expires, we'll perform
-                        a FREE pre-inspection. This extra time will allows us to correct violations before the official
-                        inspection.
+                    <ServicesP>Sunshine Elevator every year, a month before the Certificate of Operation expires, we'll perform
+                        a FREE pre-inspection to avoid fines. 
+                        
                     </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
@@ -41,6 +41,16 @@ const Services = () => {
                     <ServicesIcon src={Icon3}/>
                     <ServicesH2> Stellar Costumer Service</ServicesH2>
                     <ServicesP> Sunshine Elevator acknowledges and values the relationship with our customers and we solidify this with our quality work and a great attitude.</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3}/>
+                    <ServicesH2> Cab Rebfabication</ServicesH2>
+                    <ServicesP> Sunshine Elevator also offers re-fabrication of your current elevator cabs to give a much cleaner or modern look for everyone to enjoy.</ServicesP>
+                </ServicesCard>
+                <ServicesCard>
+                    <ServicesIcon src={Icon3}/>
+                    <ServicesH2> Financing Packages</ServicesH2>
+                    <ServicesP> Things that talk about the financing package that sunshine elevator offers to clients </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
