@@ -22,7 +22,6 @@ const Services = () => {
                     <ServicesH2>Avoid expired Certificates</ServicesH2>
                     <ServicesP>Sunshine Elevator every year, a month before the Certificate of Operation expires, we'll perform
                         a FREE pre-inspection to avoid fines. 
-                        
                     </ServicesP>
                 </ServicesCard>
                 <ServicesCard>

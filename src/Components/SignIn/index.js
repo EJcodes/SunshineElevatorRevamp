@@ -35,34 +35,16 @@ import {
 
 const SignIn = props => {
 
-    const changeFullname = (event) =>
-        setSignupCred({ 
-             fullname:event.target.value
-        });
-    
-    const changeUsername = (event) =>
-        setSignupCred({
-             username:event.target.value
-        })
-    
-    const changeEmail = (event) => 
-        setSignupCred ({
-             email:event.target.value
-        })
-    
-    const changePassword = (event) => 
-        setSignupCred({
-             password:event.target.value
-        })
-    const [signupCred, setSignupCred ] = useState({
-        fullName:'',
-        username:'',
-        password:'',
+    //Signin Signup state 
+    const [signupCred, setSignupCred] = useState({
+        fullname: '',
+        username: '',
         email:'',
+        password: ''
     })
-
     //Sign Up transition for left IMG, Container    
-    let [CssTransitions, setCssTransitions] = useState({
+    const [CssTransitions, setCssTransitions] = useState({
+        
         ContainerCss:[
             {transform: `translateY(-50%);` , right: '48%'},
         ],
@@ -92,57 +74,58 @@ const SignIn = props => {
         ],
         ContainerCssMobile:[
             {transform:`translate(-50%)`,
-             bottom:`32%`,
-             right:`initial`,
-             rightImgMobile:`translateY(300px)`,
-             formContentMobileTransform: `translate(-50%, 100%)`
-             }
-        ]
-    });
-    
+            bottom:`32%`,
+            right:`initial`,
+            rightImgMobile:`translateY(300px)`,
+            formContentMobileTransform: `translate(-50%, 100%)`
+        }
+    ]
+});
+
+
     const containerTransitionHandler = () => {
-        setCssTransitions({
-            ContainerCss:[
-                {transform: `translate(100%, -50%)` , right: '48%'}
-            ],
-            FormContent:[{
-                left: `25%`
-            }],
-            LeftImgCss:[
-                {transform:`translateX(-900px)`}
-            ],
-            LPContent:[
-                {transform:`translateX(-800px)`}
-            ],
-            RightImgCss:[
-                {transform: `translateX(0px)`}
-            ],
-            LPCpointerEvents:[
-                {pointerEvents: `none`}
-            ],
-            RPCpointerEvents:[
-                {pointerEvents: `all`}
-            ],
-            signInform:[
-                {zIndex:`1`, opacity:`0`,  transform:`left: 25%`}
-            ],
-            signUpForm:[
-                {zIndex:`2`, opacity:`1`, transform:`left: 25%` }
-            ],
-            ContainerCssMobile:[
-                {transform:`translate(-50%, 120%)`, 
-                bottom:`32%`,
-                 right:`initial`,
-                 rightImgMobile:`translateY(0px)`,
-                 formContentMobileTop:`30%`,
-                 formContentMobileTransform: `translate(-50%, 0)`
-                }
-            ]
-        });   
+    setCssTransitions({
+        ContainerCss:[
+            {transform: `translate(100%, -50%)` , right: '48%'}
+        ],
+        FormContent:[{
+            left: `25%`
+        }],
+        LeftImgCss:[
+            {transform:`translateX(-900px)`}
+        ],
+        LPContent:[
+            {transform:`translateX(-800px)`}
+        ],
+        RightImgCss:[
+            {transform: `translateX(0px)`}
+        ],
+        LPCpointerEvents:[
+            {pointerEvents: `none`}
+        ],
+        RPCpointerEvents:[
+            {pointerEvents: `all`}
+        ],
+        signInform:[
+            {zIndex:`1`, opacity:`0`,  transform:`left: 25%`}
+        ],
+        signUpForm:[
+            {zIndex:`2`, opacity:`1`, transform:`left: 25%` }
+        ],
+        ContainerCssMobile:[
+            {transform:`translate(-50%, 120%)`, 
+            bottom:`32%`,
+            right:`initial`,
+            rightImgMobile:`translateY(0px)`,
+            formContentMobileTop:`30%`,
+            formContentMobileTransform: `translate(-50%, 0)`
+        }
+    ]
+});   
     };
 
     const containerTransitionHandlerRevert = () => {
-        setCssTransitions({
+    setCssTransitions({
         ContainerCss:[
             {transform: `translateY(-50%)` , right: '48%'},
         ],
@@ -176,21 +159,41 @@ const SignIn = props => {
             right:`initial`,
             rightImgMobile:`translateY(300px)`,
             formContentMobileTransform: `translate(-50%, 100%)`
-            }
-        ]
-        });
-    };
-    
-    const onSubmit = (event)=>{
-        event.preventDefault()
-
-        const registered = {
-            fullName: setSignupCred .fullName,
-            username: setSignupCred .username,
-            email: setSignupCred.email,
-            password: setSignupCred.password
         }
+    ]
+});
+    };
+    const changeFullname = (event) =>
+        setSignupCred.fullname = event.target.value;
+
+    const changeUsername = (event) => {
+        setSignupCred({
+         username:event.target.value
+    })
+
+    console.log(setSignupCred.username)
     }
+
+const changeEmail = (event) => 
+    setSignupCred ({
+         email:event.target.value
+    })
+
+const changePassword = (event) => 
+    setSignupCred({
+         password:event.target.value
+    })
+
+const onSubmit = (event)=>{
+    event.preventDefault()
+    
+    const registered = {
+        fullName: setSignupCred .fullName,
+        username: setSignupCred .username,
+        email: setSignupCred.email,
+        password: setSignupCred.password
+    }
+}
     
     return (
         <>
@@ -208,6 +211,8 @@ const SignIn = props => {
                             <Icon2><FaUserAlt/></Icon2>
                             <FormInput
                              placeholder='Username'
+                             value={signupCred.username}
+                             onChange={changeFullname}
                              />
                          </InputField>
                          <InputField >
@@ -228,7 +233,7 @@ const SignIn = props => {
                             <Icon2><FaUserAlt/></Icon2>
                             <FormInput 
                             type='text'
-                            onChange={changeFullname}
+                            onChange={changeFullname.bind}
                             value={signupCred.fullname}
                             placeholder='Full name'
                             />
