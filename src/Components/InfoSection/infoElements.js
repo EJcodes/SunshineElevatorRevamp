@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
-
 export const InfoContainer = styled.div`
     height: 1000px;
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#000')};
 
     @media screen and (max-width: 834xp) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 376xp) {
+        height: 812px;
         padding: 100px 0;
     }
 `;

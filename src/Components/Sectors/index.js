@@ -2,15 +2,15 @@ import React from 'react';
 import Icon1 from '../images/svg-$.svg';
 import Icon2 from '../images/svg-12.svg';
 import Icon3 from '../images/svg-11.svg';
+import Indust from '../images/svg-indust.svg';
 import {
     SectorContainer,
-    SectorH1,
-    SectorH2,
-    SectorWrapper,
-    SectorP,
     SectorCard,
+    SectorH1,
+    SectorH2Card,
+    SectorWrapper,
     SectorIcon,
-    SectorH1Card
+
 } from './SectorElements'
 
 const SectorServices = () => {
@@ -18,32 +18,35 @@ const SectorServices = () => {
         <SectorContainer id='sectors'>
             <SectorH1>Our Sectors</SectorH1>
             <SectorWrapper>
+                
                 <SectorCard>
-                    <SectorH1Card>Industrial</SectorH1Card>
-                    <SectorIcon src={Icon3}/>
+                    <SectorIcon src={Indust}/>
+                    <SectorH2Card>Industrial</SectorH2Card>
                 </SectorCard>
+
                 <SectorCard>
                     <SectorIcon src={Icon1}/>
-                    <SectorH1Card>Residntial {'\n'} Housing</SectorH1Card>
+                    <SectorH2Card>Residential Housing</SectorH2Card>
                 </SectorCard>
+                
                 <SectorCard>
                     <SectorIcon src={Icon2}/>
-                    <SectorH1Card>Commercial {'\n'} Buildings</SectorH1Card>
+                    <SectorH2Card>Commercial Buildings</SectorH2Card>
     
                 </SectorCard>
                 <SectorCard>
                     <SectorIcon src={Icon3}/>
-                    <SectorH1Card> Education</SectorH1Card>
+                    <SectorH2Card> Education</SectorH2Card>
                     
                 </SectorCard>
                 <SectorCard>
                     <SectorIcon src={Icon3}/>
-                    <SectorH1Card> Healthcare </SectorH1Card>
+                    <SectorH2Card> Healthcare </SectorH2Card>
                     
                 </SectorCard>
                 <SectorCard>
                     <SectorIcon src={Icon3}/>
-                    <SectorH1Card> Retail </SectorH1Card>
+                    <SectorH2Card> Retail </SectorH2Card>
                     
                 </SectorCard>
             </SectorWrapper>
