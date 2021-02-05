@@ -1,8 +1,8 @@
 import React from 'react';
-import Icon1 from '../images/svg-$.svg';
-import Icon2 from '../images/svg-12.svg';
-import Icon3 from '../images/svg-11.svg';
-import Indust from '../images/svg-indust.svg';
+import Icon1 from './Images/ResidentialHousing.svg';
+import Icon2 from './Images/svg-12.svg';
+import Icon3 from './Images/svg-11.svg';
+import Indust from'./Images/svg-indust.svg';
 import {
     SectorContainer,
     SectorCard,
