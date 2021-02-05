@@ -15,7 +15,7 @@ export const SectorContainer= styled.div`
     @media screen and (max-width: 480px) {
         height:auto;
     }
-`
+`;
 
 export const SectorWrapper = styled.div`
     max-width: 1000px;
@@ -50,14 +50,24 @@ export const SectorCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+
+    @media screen and (max-width: 768px) {
+        min-height: 190px;
+    }
 `;
 
 export const SectorIcon = styled.img`
     height: 160px;
     width: 160px;
-    margin-bottom: 10px:
+    margin-bottom: 10px;
 
-`
+    @media screen and (max-width: 768px) {
+       height: 120px;
+       width: 120px;
+       margin-bottom: 0px;
+    }
+
+`;
 
 export const SectorH1 = styled.h1`
     display: block;
@@ -73,7 +83,9 @@ export const SectorH1 = styled.h1`
         padding-top: 35px;
         padding-bottom: 60px;
     }
-`
+
+   
+`;
 
 export const SectorH2Card = styled.h2`
     display: block;
@@ -88,17 +100,24 @@ export const SectorH2Card = styled.h2`
         margin: 0 auto;
         font-size: 2rem;
         padding-top: 35px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
-`
+
+    @media screen and (max-width: 768px) {
+        margin: 0 auto;
+        font-size: 1rem;
+        padding-top: 15px;
+
+    }
+`;
 
 export const SectorH2 = styled.h2`
     font-size:1rem;
     margin-bottom: 10px;
-`
+`;
 
 export const SectorP = styled.p`
     font-size: 1rem;
     text-align: center;
 
-`
+`;
