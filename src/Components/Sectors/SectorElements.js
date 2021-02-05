@@ -31,7 +31,7 @@ export const SectorWrapper = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         padding: 0 20px;
     }
 `;
@@ -52,7 +52,7 @@ export const SectorCard = styled.div`
     }
 
     @media screen and (max-width: 768px) {
-        min-height: 190px;
+        min-height: 180px;
     }
 `;
 
@@ -62,8 +62,8 @@ export const SectorIcon = styled.img`
     margin-bottom: 10px;
 
     @media screen and (max-width: 768px) {
-       height: 120px;
-       width: 120px;
+       height: 100px;
+       width: 100px;
        margin-bottom: 0px;
     }
 
@@ -105,7 +105,7 @@ export const SectorH2Card = styled.h2`
 
     @media screen and (max-width: 768px) {
         margin: 0 auto;
-        font-size: 1rem;
+        font-size: .85rem;
         padding-top: 15px;
 
     }
