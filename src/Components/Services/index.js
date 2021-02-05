@@ -1,7 +1,7 @@
 import React from 'react';
-import Icon1 from '../Images/ResidentialHousing.svg';
-import Icon2 from './Images/svg-12.svg';
-import Icon3 from './Images/svg-11.svg';
+import Icon1 from '../Images/ResidentialHousing.svg'
+import Icon2 from '../Images/svg-12.svg';
+import Icon3 from '../Images/svg-11.svg';
 import {
     ServicesContainer,
     ServicesH1,
