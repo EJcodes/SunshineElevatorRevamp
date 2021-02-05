@@ -44,7 +44,11 @@ export const SectorCard = styled.div`
     align-items: center;
     border-radius: 10px;
     min-height:400px;
+<<<<<<< HEAD
     max-height: 400px;
+=======
+    max-height:  400px;
+>>>>>>> b569ff85ab5469595ee1488fb7ba3547080a7a3a
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
