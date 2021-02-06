@@ -13,7 +13,7 @@ export const SectorContainer= styled.div`
     }
 
     @media screen and (max-width: 480px) {
-        height:auto;
+        height:812px;
     }
 `;
 
