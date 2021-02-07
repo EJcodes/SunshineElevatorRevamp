@@ -93,6 +93,7 @@ export const SectorH2Card = styled.h2`
     color: #AC4316;
     margin-bottom: 64px;
     margin-top: 34px;
+    text-align: center;
     
     
     @media screen and (max-width: 480px){
