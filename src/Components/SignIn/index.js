@@ -1,8 +1,8 @@
 import React, { component,useState,setState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
-import RPI from '../../Images/svg-11.svg';
-import LPI from '../../Images/svg-12.svg';
+import RPI from '../Images/svg-11.svg';
+import LPI from '../Images/svg-12.svg';
 
 import {    
     Container,
