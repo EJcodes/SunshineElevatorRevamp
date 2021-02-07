@@ -56,10 +56,10 @@ export const ServicesCard = styled.div`
     }
     
     @media screen and (max-width: 768px) {
-        max-height: 160px;
-        min-height: 160px;
-        max-width: 160px;
-        min-height: 160px;
+        max-height: 170px;
+        min-height: 170px;
+        max-width: 170px;
+        min-height: 170px;
         padding: 10px;
     }
 

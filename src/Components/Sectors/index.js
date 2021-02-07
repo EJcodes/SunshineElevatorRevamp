@@ -3,6 +3,7 @@ import Icon1 from '../Images/ResidentialHousing.svg';
 import Icon2 from '../Images/Commercial.svg';
 import Icon3 from '../Images/Education.svg';
 import Icon4 from '../Images/HealthCare.svg';
+import Icon5 from '../Images/Retail.svg'
 import Indust from'../Images/Indust.svg';
 import {
     SectorContainer,
@@ -46,7 +47,7 @@ const SectorServices = () => {
                     
                 </SectorCard>
                 <SectorCard>
-                    <SectorIcon src={Icon3}/>
+                    <SectorIcon src={Icon5}/>
                     <SectorH2Card> Retail </SectorH2Card>
                     
                 </SectorCard>
