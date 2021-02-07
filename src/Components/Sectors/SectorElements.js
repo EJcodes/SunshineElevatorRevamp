@@ -13,7 +13,7 @@ export const SectorContainer= styled.div`
     }
 
     @media screen and (max-width: 480px) {
-        height:812px;
+        height:912px;
     }
 `;
 
@@ -93,7 +93,7 @@ export const SectorH2Card = styled.h2`
     color: #AC4316;
     margin-bottom: 64px;
     margin-top: 34px;
-    text-align: center;
+    text-align:
     
     
     @media screen and (max-width: 480px){
