@@ -284,7 +284,7 @@ const onSubmit = (event)=>{
                         <FormButtonTrans type='submit' onClick={containerTransitionHandler}>Sign Up</FormButtonTrans>
                     </LPC>
 
-                    <LeftPanelImg src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
+                    <LeftPanelImg alt="Image with a person and his profile information in a web browser"src={LPI} transform={CssTransitions.LeftImgCss[0].transform}/>
                 </LeftPanel>
                 <RightPanel >
                     <RPC 
@@ -297,6 +297,7 @@ const onSubmit = (event)=>{
                     </RPC>
 
                     <RightPanelImg 
+                    alt="Image of a UFO abducting a minion with a levitation ray"
                     src={RPI} 
                     transform={CssTransitions.RightImgCss[0].transform}
                     transformMobile={CssTransitions.ContainerCssMobile[0].rightImgMobile}/>

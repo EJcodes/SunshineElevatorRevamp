@@ -22,32 +22,32 @@ const SectorServices = () => {
             <SectorWrapper>
                 
                 <SectorCard>
-                    <SectorIcon src={Indust}/>
+                    <SectorIcon alt="Image of industrial factory"src={Indust}/>
                     <SectorH2Card>Industrial</SectorH2Card>
                 </SectorCard>
 
                 <SectorCard>
-                    <SectorIcon src={Icon1}/>
+                    <SectorIcon alt="Image of an residential area" src={Icon1}/>
                     <SectorH2Card>Residential Housing</SectorH2Card>
                 </SectorCard>
                 
                 <SectorCard>
-                    <SectorIcon src={Icon2}/>
+                    <SectorIcon alt="Image of a commercial building" src={Icon2}/>
                     <SectorH2Card>Commercial Buildings</SectorH2Card>
     
                 </SectorCard>
                 <SectorCard>
-                    <SectorIcon src={Icon3}/>
+                    <SectorIcon alt="Image of a building used for education" src={Icon3}/>
                     <SectorH2Card> Education</SectorH2Card>
                     
                 </SectorCard>
                 <SectorCard>
-                    <SectorIcon src={Icon4}/>
+                    <SectorIcon alt="Image of a Hospital building" src={Icon4}/>
                     <SectorH2Card> Healthcare </SectorH2Card>
                     
                 </SectorCard>
                 <SectorCard>
-                    <SectorIcon src={Icon5}/>
+                    <SectorIcon alt="Image of a retail store" src={Icon5}/>
                     <SectorH2Card> Retail </SectorH2Card>
                     
                 </SectorCard>
