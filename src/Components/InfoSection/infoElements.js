@@ -63,6 +63,7 @@ export const TopLine = styled.p`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+
 `;
 
 export const Heading= styled.h1`
@@ -71,6 +72,13 @@ export const Heading= styled.h1`
     line-height: 1.1;
     font-weight: 600;
     color:${({ lightText }) => (lightText ? '#010606' : '#D3602E')};
+    
+    @media screen and (max-width: 280px){
+        font-size: 24px;
+        font-weight: 0;
+        line-height: 1.1;
+        margin-top: 24px;
+    }
 
     @media screen and (max-width: 480px){
         margin-top: 74px;
@@ -84,6 +92,11 @@ export const Subtitle = styled.p`
     font-size: 18px;
     line-height: 24px;
     color: ${({ darkText }) => (darkText ? '#010606' : "#fff")};
+
+    @media screen and (max-width: 280px) {
+        font-size: 12px;
+        line-height:18px;
+    }
 `;
 
 export const SubtitleTwo = styled.p`
