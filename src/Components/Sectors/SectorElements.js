@@ -96,23 +96,22 @@ export const SectorH2Card = styled.h2`
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: center;
-  
     
     
-    // @media screen and (max-width: 768px) {
-    //     margin: 0 auto;
-    //     font-size: .85rem;
-    //     padding-top: 15px;
+    @media screen and (max-width: 768px) {
+        margin: 0 auto;
+        font-size: .85rem;
+        padding-top: 15px;
 
-    // }
+    }
     
-    // @media screen and (max-width: 480px){
-    //     overflow: hidden;
-    //     margin: 0 auto;
-    //     font-size: 2rem;
-    //     margin-bottom: 34px;
-    //     max-height:
-    // }
+    @media screen and (max-width: 480px){
+        overflow: hidden;
+        margin: 0 auto;
+        font-size: 2rem;
+        margin-bottom: 34px;
+        max-height:
+    }
 
 `;
 

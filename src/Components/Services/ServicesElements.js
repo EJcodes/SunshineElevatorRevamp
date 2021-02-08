@@ -7,7 +7,7 @@ export const ServicesContainer= styled.div`
     justify-content: center;
     align-items: center;
     background: #010606;
-
+    height: 1000px;
     @media screen and (max-width: 834px) {
         height: 100px;
     }
@@ -45,10 +45,11 @@ export const ServicesCard = styled.div`
     align-items: center;
     border-radius: 10px;
     max-height: 450px;
+    min-height: 313px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
-    min-height: 313px;
+
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
