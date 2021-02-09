@@ -23,19 +23,19 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon alt="Images representing ceritficate awarded"src={Icon1}/>
                     <ServicesH2>Certificates</ServicesH2>
-                    <ServicesP>Sunshine Elevator every year, a month before the Certificate of Operation expires, we'll perform
+                    <ServicesP>Sunshine Elevator every year, a month before the Certificate of Operation expires will perform
                         a FREE pre-inspection to avoid fines. 
                     </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Images showing money being saved" src={Icon2}/>
                     <ServicesH2>Reduced Expenses</ServicesH2>
-                    <ServicesP> SunShine Elevator stays competitive with our pricing to reduce your overall expenses without reducing quality of our work for our costumers.</ServicesP>
+                    <ServicesP> Sunshine Elevator stays competitive with our pricing to reduce your overall expenses without reducing quality of our work for our costumers.</ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Image of a clock" src={Icon3}/>
                     <ServicesH2>Quick Responses</ServicesH2>
-                    <ServicesP> SunShine Elevator takes pride in our quick and direct responses with our customers so they stay in the loop during unforeseen circumstances. 
+                    <ServicesP> Sunshine Elevator takes pride in our quick and direct responses with our customers so they stay in the loop during unforeseen circumstances. 
                         
                         </ServicesP>
                 </ServicesCard>
