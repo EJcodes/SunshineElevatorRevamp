@@ -1,4 +1,4 @@
-import React, { component,useState,setState } from 'react';
+import React, { useState } from 'react';
 import { FaUserAlt, FaLock, FaEnvelope } from 'react-icons/fa';
 import '../Fonts/Poppins-Black.ttf';
 import RPI from '../Images/svg-11.svg';
@@ -9,7 +9,6 @@ import {
     FormWrap,
     InputField,
     SignUpForm,
-    Icon,
     Icon2,
     Form,
     FormContent,
@@ -187,12 +186,12 @@ const changePassword = (event) =>
 const onSubmit = (event)=>{
     event.preventDefault()
     
-    const registered = {
-        fullName: setSignupCred .fullName,
-        username: setSignupCred .username,
-        email: setSignupCred.email,
-        password: setSignupCred.password
-    }
+    // const registered = {
+    //     fullName: setSignupCred.fullName,
+    //     username: setSignupCred.username,
+    //     email: setSignupCred.email,
+    //     password: setSignupCred.password
+    // }
 }
     
     return (
