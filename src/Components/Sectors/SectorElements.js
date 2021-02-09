@@ -8,13 +8,14 @@ export const SectorContainer= styled.div`
     align-items: center;
     background: #000000;
 
-    @media screen and (max-width: 834px) {
-        height: 1300px;
+    @media screen and (max-width: 1284px) {
+        height: 1000px;
     }
 
-    @media screen and (max-width: 480px) {
-        height:912px;
+    @media screen and (max-width: 834px) {
+        height: 1000px;
     }
+
 `;
 
 export const SectorWrapper = styled.div`
@@ -52,8 +53,13 @@ export const SectorCard = styled.div`
         cursor: pointer;
     }
 
+    @media screen and (min-width: 428px) and (max-width: 767px) {
+        min-height: 180px;
+    }
+
     @media screen and (max-width: 768px) {
         min-height: 180px;
+
     }
 `;
 
@@ -97,7 +103,6 @@ export const SectorH2Card = styled.h2`
     margin-top: 0px;
     text-align: center;
     
-    
     @media screen and (max-width: 768px) {
         margin: 0 auto;
         font-size: .85rem;
@@ -105,12 +110,12 @@ export const SectorH2Card = styled.h2`
 
     }
     
-    @media screen and (max-width: 480px){
+    @media screen and (max-width: 490px){
         overflow: hidden;
         margin: 0 auto;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 34px;
-        max-height:
+       
     }
 
 `;
