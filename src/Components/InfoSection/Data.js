@@ -20,7 +20,7 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: true,
     lightTextDesc: false,
-    topLine: 'Sunshine Elevator',
+    // topLine: 'Sunshine Elevator',
     headline: 'Contact Us:',
     description: "",
     descriptionTwo: `Phone : ( 786 ) 558 - 5752  Email: SunShineElevatorService@gmail.com`,

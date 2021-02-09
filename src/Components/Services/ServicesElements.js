@@ -8,6 +8,15 @@ export const ServicesContainer= styled.div`
     align-items: center;
     background: #010606;
 
+    @media only screen 
+    and (device-width: 428px) 
+    and (device-height: 926px) 
+    and (orientation : landscape) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        height: 1300px;
+
+    }
+
     @media screen and (max-width: 834px) {
         height: 1000px;
     }
@@ -28,8 +37,8 @@ export const ServicesWrapper = styled.div`
     
    
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: 900px) and (max-width:1020px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     @media screen and (max-width: 768px) {
