@@ -26,7 +26,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                         Services
                     </SidebarLink>
                     <SidebarLink to="sectors" onClick={toggle}>
-                        sectors
+                        Sectors
                     </SidebarLink>
                 </SidebarMenu>
                 {/* <SideBtnWrap>
