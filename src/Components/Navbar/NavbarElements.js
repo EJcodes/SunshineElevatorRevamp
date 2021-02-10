@@ -30,11 +30,12 @@ export const NavbarContainer = styled.div`
   `;
 
   export const NavLogo = styled(LinkR)`
+  z-index: 3;
   color: #D3602E;
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   align-items: center;
   margin-left: 24px;
   font-weight: bold;
@@ -115,4 +116,11 @@ export const NavbarContainer = styled.div`
         background: #fff;
         color: #D3602E;
     }
+  `;
+
+
+  export const Logo = styled.img`
+    z-index: 2;
+    height: 60px;
+    margin-right: 5px;
   `;

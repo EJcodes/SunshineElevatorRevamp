@@ -1,7 +1,10 @@
 import React, {useState, useEffect} from 'react';
 import {FaBars} from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
-import{Nav,
+import logoSVG from '../Images/Logo.svg';
+import{
+    Logo,
+    Nav,
     NavbarContainer,
     NavLogo,
     MobileIcon,
@@ -35,7 +38,7 @@ const Navbar = ({ toggle }) => {
         <>
           <Nav scrollNav={scrollNav}>
               <NavbarContainer>
-                  <NavLogo to='/' onClick={toggleHome}>Sunshine Elevator</NavLogo>
+                  <NavLogo to='/' onClick={toggleHome}><Logo src={logoSVG}/>Sunshine Elevator</NavLogo>
                   <MobileIcon onClick={toggle}>
                       <FaBars />
                   </MobileIcon>
@@ -65,9 +68,9 @@ const Navbar = ({ toggle }) => {
                            >Contact Us</NavLinks>
                        </NavItem>
                   </NavMenu>
-                       <NavBtn>
+                       {/* <NavBtn>
                            <NavBtnLink to ='/signin'>Sign In</NavBtnLink>
-                       </NavBtn>
+                       </NavBtn> */}
               </NavbarContainer>
           </Nav>
         </> 
