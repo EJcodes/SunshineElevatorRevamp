@@ -41,8 +41,8 @@ export const NavbarContainer = styled.div`
   font-weight: bold;
   text-decoration: none;
 
-  @media screen and (max-width: 834px){
-    font-size: 2rem;
+  @media screen and (max-width: 455px){
+    font-size: 1.5rem;
 
 }
 
