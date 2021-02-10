@@ -27,14 +27,15 @@ export const SectorWrapper = styled.div`
     grid-gap: 16px;
     padding: 0 50px;
 
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1fr;
+    @media screen and (min-width: 768px) and (max-width:1020px) {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr 1fr;
-        padding: 0 20px;
-    }
+
+    // @media screen and (max-width: 768px) {
+    //     grid-template-columns: 1fr 1fr;
+    //     padding: 0 20px;
+    // }
 `;
 
 export const SectorCard = styled.div`
@@ -53,6 +54,7 @@ export const SectorCard = styled.div`
         cursor: pointer;
     }
 
+   
     @media screen and (min-width: 428px) and (max-width: 767px) {
         min-height: 180px;
     }
