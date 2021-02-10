@@ -38,10 +38,12 @@ const Navbar = ({ toggle }) => {
         <>
           <Nav scrollNav={scrollNav}>
               <NavbarContainer>
-                  <NavLogo to='/' onClick={toggleHome}><Logo src={logoSVG}/>Sunshine Elevator</NavLogo>
+                  <NavLogo to='/' onClick={toggleHome}><Logo alt="sunshine elevator service's logo" src={logoSVG}/>Sunshine Elevator</NavLogo>
+                  
                   <MobileIcon onClick={toggle}>
                       <FaBars />
                   </MobileIcon>
+
                   <NavMenu>
                       <NavItem>
                         <NavLinks to='about'
