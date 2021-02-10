@@ -30,7 +30,7 @@ export const NavbarContainer = styled.div`
   `;
 
   export const NavLogo = styled(LinkR)`
-  z-index: 3;
+ 
   color: #D3602E;
   justify-self: flex-start;
   cursor: pointer;
@@ -40,6 +40,12 @@ export const NavbarContainer = styled.div`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+
+  @media screen and (max-width: 834px){
+    font-size: 2rem;
+
+}
+
   `;
 
   export const MobileIcon = styled.div`
@@ -120,7 +126,11 @@ export const NavbarContainer = styled.div`
 
 
   export const Logo = styled.img`
-    z-index: 2;
     height: 60px;
     margin-right: 5px;
+
+    @media screen and (max-width: 834px){
+      height: 45px;
+
+  }
   `;
