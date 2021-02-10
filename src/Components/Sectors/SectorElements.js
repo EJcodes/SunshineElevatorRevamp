@@ -32,10 +32,10 @@ export const SectorWrapper = styled.div`
     }
 
 
-    // @media screen and (max-width: 768px) {
-    //     grid-template-columns: 1fr 1fr;
-    //     padding: 0 20px;
-    // }
+    @media screen and (max-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 20px;
+    }
 `;
 
 export const SectorCard = styled.div`
