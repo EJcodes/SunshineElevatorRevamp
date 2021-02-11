@@ -1,4 +1,10 @@
 import styled from 'styled-components';
+import Icon1 from '../Images/Certificate.svg'
+import Icon2 from '../Images/ReduceExpenses.svg';
+import Icon3 from '../Images/Responsetimes.svg';
+import Icon4 from '../Images/CustomerService.svg';
+import Icon5 from '../Images/Refab.svg';
+import Icon6 from '../Images/FinancePackages.svg';
 
 
 export const ServicesContainer= styled.div`
@@ -46,6 +52,7 @@ export const ServicesWrapper = styled.div`
 
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr 1fr;
+        background-image:${Icon2};
         padding: 0 20px;
         grid-gap:10px;
     }

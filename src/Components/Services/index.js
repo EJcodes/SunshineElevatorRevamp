@@ -23,36 +23,49 @@ const Services = () => {
                 <ServicesCard>
                     <ServicesIcon alt="Images representing ceritficate awarded"src={Icon1}/>
                     <ServicesH2>Certificates</ServicesH2>
-                    <ServicesP>Sunshine Elevator every year, a month before the Certificate of Operation expires will perform
-                        a FREE pre-inspection to avoid fines. 
+                    <ServicesP>Sunshine Elevator every year, a month before the Certificate 
+                        of Operation expires will perform a FREE pre-inspection to 
+                        avoid fines. 
                     </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Images showing money being saved" src={Icon2}/>
                     <ServicesH2>Reduced Expenses</ServicesH2>
-                    <ServicesP> Sunshine Elevator stays competitive with our pricing to reduce your overall expenses without reducing quality of our work for our costumers.</ServicesP>
+                    <ServicesP> Sunshine Elevator stays competitive with pricing to 
+                        reduce your overall expenses without jeopardizing the quality 
+                        of our work for our clients.
+                    </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Image of a clock" src={Icon3}/>
                     <ServicesH2>Quick Responses</ServicesH2>
-                    <ServicesP> Sunshine Elevator takes pride in our quick and direct responses with our customers so they stay in the loop during unforeseen circumstances. 
-                        
-                        </ServicesP>
+                    <ServicesP> Sunshine Elevator takes pride in our quick and direct 
+                        responses with our customers so they stay in the loop 
+                        during unforeseen circumstances. 
+                    </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Image showing two people communicating" src={Icon4}/>
-                    <ServicesH2> Costumer Service</ServicesH2>
-                    <ServicesP> Sunshine Elevator acknowledges and values the relationship with our customers and we solidify this with our quality work and a great attitude.</ServicesP>
+                    <ServicesH2> Customer Service</ServicesH2>
+                    <ServicesP> Sunshine Elevator acknowledges and values the relationships 
+                        with our clients, this solidified with our attention to detail and
+                        and a great attitude.
+                     </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Image representing the word Creative" src={Icon5}/>
                     <ServicesH2> Cab Refabrication</ServicesH2>
-                    <ServicesP> Sunshine Elevator also offers re-fabrication of your current elevator cabs to give a much cleaner or modern look for everyone to enjoy.</ServicesP>
+                    <ServicesP> Sunshine Elevator also offers re-fabrication of your current 
+                        elevator cabs to give a much modern and clean look for everyone
+                         to enjoy.
+                    </ServicesP>
                 </ServicesCard>
                 <ServicesCard>
                     <ServicesIcon alt="Image someone looking at financial options" src={Icon6}/>
                     <ServicesH2> Financing Packages</ServicesH2>
-                    <ServicesP> Things that talk about the financing package that sunshine elevator offers to clients </ServicesP>
+                    <ServicesP> Sunshine Elevator offers clients project financial packages for 
+                        each project they are contracted to be apart of. 
+                    </ServicesP>
                 </ServicesCard>
             </ServicesWrapper>
         </ServicesContainer>
